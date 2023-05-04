@@ -1,1 +1,6 @@
 /* css styles */
+
+img.about-image {
+  width: 50%;
+  height: auto;
+}

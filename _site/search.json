@@ -2,15 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "JimQuartoWebsite",
+    "title": "Jim Rose’s Website",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Hello! This is where I’m building my personal website using Quarto.\n\n\nI’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools. I’ve got a particular interest in applying a deeper understanding of statistics to laboratory experiments as well as data visualization.\n\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot..trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Jim Rose’s Website",
+    "section": "About Me",
+    "text": "About Me\nI’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools. I’ve got a particular interest in applying a deeper understanding of statistics to laboratory experiments as well as data visualization."
+  },
+  {
+    "objectID": "index.html#my-focus-areas-include",
+    "href": "index.html#my-focus-areas-include",
+    "title": "Jim Rose’s Website",
+    "section": "My focus areas include:",
+    "text": "My focus areas include:\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot..trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics"
   }
 ]

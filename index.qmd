@@ -1,11 +1,46 @@
 ---
-title: "JimQuartoWebsite"
+title: "Jim Rose's Website"
+subtitle: "(Quarto Edition!)"
+image: headshot.png
+about:
+  template: trestles
+  image-width: 10em
+  links:
+    - text: Twitter
+      icon: twitter
+      url: "https://twitter.com/jimrose835"
+    - text: Mastodon
+      icon: mastodon
+      url: "https://genomic.social/@jrose835"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/jrose835"
+    - text: LinkedIn
+      url: "https://www.linkedin.com/in/james-r-rose-85b70023/"
 ---
 
-This is a Quarto website.
+::: column-page
+Hello! This is where I'm building my personal website using Quarto.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## About Me
 
-```{r}
-1 + 5
-```
+I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
+
+I'm a self-taught coder who works primarily in R on a daily basis, but I've also branched out to a few other languages and tools. I've got a particular interest in applying a deeper understanding of statistics to laboratory experiments as well as data visualization.
+
+## My focus areas include:
+
+-   Next generation sequencing data analysis
+
+    -   RNAseq, ATACseq, single-cell sequencing, whole-genome sequencing
+
+-   Data Visualization
+
+    -   All things ggplot..trying my hand at a little Javascript/Observable/D3 recently
+
+-   Applying biological know-how to design good questions for large complex data analysis
+
+-   Gene regulatory network analysis
+
+-   Epigenetics
+:::
