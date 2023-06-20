@@ -2,4 +2,26 @@
 title: "About"
 ---
 
-About this site
+## More About Me
+
+I'm a self-taught coder who works primarily in R on a daily basis, but I've also branched out to a few other languages and tools. I've got a particular interest in applying a deeper understanding of statistics to laboratory experiments, understanding how epigenetics regulates gene expression, and using data visualization techniques for genomic data.
+
+
+### My focus areas include:
+
+-   Next generation sequencing data analysis
+
+    -   RNAseq, ATACseq, single-cell sequencing, whole-genome sequencing
+
+-   Data Visualization
+
+    -   All things ggplot...trying my hand at a little Javascript/Observable/D3 recently
+
+-   Applying biological know-how to design good questions for large complex data analysis
+
+-   Gene regulatory network analysis
+
+-   Epigenetics
+
+-   Autoimmune disease and B cell tolerance mechanisms
+

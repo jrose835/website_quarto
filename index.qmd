@@ -16,7 +16,11 @@ about:
       icon: github
       url: "https://github.com/jrose835"
     - text: LinkedIn
+      icon: linkedin
       url: "https://www.linkedin.com/in/james-r-rose-85b70023/"
+    - text: Google Scholar
+      icon: google
+      url: "https://scholar.google.com/citations?user=G2WDGLUAAAAJ&hl=en"
 ---
 
 ::: column-page
@@ -26,21 +30,7 @@ Hello! This is where I'm building my personal website using Quarto.
 
 I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
 
-I'm a self-taught coder who works primarily in R on a daily basis, but I've also branched out to a few other languages and tools. I've got a particular interest in applying a deeper understanding of statistics to laboratory experiments as well as data visualization.
+## This Site
 
-## My focus areas include:
-
--   Next generation sequencing data analysis
-
-    -   RNAseq, ATACseq, single-cell sequencing, whole-genome sequencing
-
--   Data Visualization
-
-    -   All things ggplot..trying my hand at a little Javascript/Observable/D3 recently
-
--   Applying biological know-how to design good questions for large complex data analysis
-
--   Gene regulatory network analysis
-
--   Epigenetics
+I plan to use this site to host my contact/CV information as well as a place to highlight side projects I am working on.
 :::
