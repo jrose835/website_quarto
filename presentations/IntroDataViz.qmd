@@ -2,6 +2,7 @@
 title: "Intro to Data Viz"
 author: "Jim Rose"
 institute: "Lecture for IBS519, Fall 2023"
+image: ./images/anygraph.png
 format: 
   revealjs:
     self-contained: true
@@ -22,12 +23,12 @@ editor: visual
 :::
 
 ::: {.column width="60%"}
-My website (build one for yourself!): ![](./images/website.png)
+My website (build one for yourself!): ![](./images/website2.png)
 :::
 :::
 
 ::: {footer}
-<https://jrose835.github.io/JimRose.github.io/>
+<https://jrose835.quarto.pub/jimrose_quartosite/>
 :::
 
 ## Main Q's for Today:

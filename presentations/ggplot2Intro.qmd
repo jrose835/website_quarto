@@ -1,5 +1,5 @@
 ---
-title: "Using ggplot2, an introduction"
+title: "ggplot2, an introduction"
 author: "Jim Rose"
 institute: "Lecture for IBS519, Fall 2023"
 format: 

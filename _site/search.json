@@ -25,14 +25,14 @@
     "href": "Teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Introduction to Data Viz\nUsing ggplot2"
+    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created!"
   },
   {
     "objectID": "presentations/IntroDataViz.html#who-am-i",
     "href": "presentations/IntroDataViz.html#who-am-i",
     "title": "Intro to Data Viz",
     "section": "Who am I?",
-    "text": "Who am I?\n\n\n\nOne of your TAs for this course\nPhD student (5th year, Genetics & Molecular Biology program)\nComputational immunology/gene regulation research\nSelf-taught coder (R & python)\n\n\nMy website (build one for yourself!): \n\n\n\nhttps://jrose835.github.io/JimRose.github.io/"
+    "text": "Who am I?\n\n\n\nOne of your TAs for this course\nPhD student (5th year, Genetics & Molecular Biology program)\nComputational immunology/gene regulation research\nSelf-taught coder (R & python)\n\n\nMy website (build one for yourself!): \n\n\n\nhttps://jrose835.quarto.pub/jimrose_quartosite/"
   },
   {
     "objectID": "presentations/IntroDataViz.html#main-qs-for-today",
@@ -156,154 +156,154 @@
   {
     "objectID": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
     "href": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "ggplot2 is your first introduction to the tidyverse",
     "text": "ggplot2 is your first introduction to the tidyverse"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#section",
     "href": "presentations/ggplot2Intro.html#section",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "",
     "text": "Tidyverse\n\n\nA collection of R packages serving different functions but following the same principles\nDesigned to work well together\nExtremely nerdy\n\n\nMarvel Universe\n\n\nA collection of heros/movies with different skills but following the same principles\nFrequent crossovers/cameos\nExtremely nerdy"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#it-is-possible-to-create-almost-any-type-of-graphic-using-r-and-ggplot2",
     "href": "presentations/ggplot2Intro.html#it-is-possible-to-create-almost-any-type-of-graphic-using-r-and-ggplot2",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "It is possible to create almost ANY type of graphic using R and ggplot2",
     "text": "It is possible to create almost ANY type of graphic using R and ggplot2"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
     "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "The Layered Grammar of Graphics of ggplot2",
     "text": "The Layered Grammar of Graphics of ggplot2\n\nOne reason that ggplot2 is so popular is that it uses a consistent framework, or “grammar”, which makes it both intuitive AND flexible\nElements of any chart (i.e. axis, points, bars, text etc) are “layered” on top of each other to form the complete graphic\n\n\n\n\n\n\n\n\n\n\nThe layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham@fosstodon.org) the creator of ggplot2"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
     "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "The Layered Grammar of Graphics of ggplot2",
     "text": "The Layered Grammar of Graphics of ggplot2\n\n\n\n\n“Good grammar is just the first step in creating a good sentence”\n\n\n\nWickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3–28 (2010)."
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() #Layer 2\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nLayers are added together using the “+” operator\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOrder matters!"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() #Layer 3\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\ngeom_() functions are used in secondary layers to define the geometric objects used in the plot\nYou can add as many geoms to the plot as you like\n\n\n\n\n\n\n\n\n\nImportant\n\n\nBut keep in mind the data viz pillars!"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) #Layer 5\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThese functions are added to make changes to the default coordinate system or axis scales\nThey start with the prefixes coord_ or scale_x, scale_y respectively"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
     "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) +#Layer 5\n  theme_classic() #Layer 6\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFinally, theme() functions can be added to alter the default appearance of the plot\ne.g. title, axis titles, font size, background color, etc"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
     "href": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Setting properties in geoms",
     "text": "Setting properties in geoms\nYou can change attributes of a layer by specifying them as arguments within the geom() function\n\n\n\n\n\nShape codes in R\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\n  geom_point(color=\"red\", shape=12, size=8)"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
     "href": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Mapping variables to aesthetics using aes()",
     "text": "Mapping variables to aesthetics using aes()\nThe aes() function is used to assign variables in your data to graphical parameters (or channels)\n\n\n\nPosition (x,y)\nColor (fill, color)\nShape(shape, linetype)\nSize (size)\nTransparency (alpha)\nGroupings (group)\n\n\n\n\n\n\n\n\nImportant\n\n\nSyntax note: Variable names do NOT use quotes when used inside aes()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#setting-vs-mapping",
     "href": "presentations/ggplot2Intro.html#setting-vs-mapping",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Setting vs Mapping",
     "text": "Setting vs Mapping\n\n\nSetting static attribute\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(color=\"red\", size=8)\n\n\n\n\n\nMapping to data\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D, size=C))\n\n\n\n\n\n\n\n\n[1] \"data\"\n\n\n  A  B  C D\n1 2  3  4 a\n2 1  2  1 a\n3 4  5 15 b\n4 9 10 80 b"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
     "href": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Globally vs locally mapping variables",
     "text": "Globally vs locally mapping variables\n\n\nLocal Mapping\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\n\n\n\n\nGlobal Mapping\n\nggplot(data=data, aes(x=C, y=A, color=D)) +\ngeom_point() +\ngeom_line()\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAesthetics set within the original layer will be applied to all later layers/geoms"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#saving-ggplots",
     "href": "presentations/ggplot2Intro.html#saving-ggplots",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Saving ggplots",
     "text": "Saving ggplots\nggplots can be stored as objects in R\n\nplot <- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#basic-geoms",
     "href": "presentations/ggplot2Intro.html#basic-geoms",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Basic geoms",
     "text": "Basic geoms\n\n\nPoints\n\ngeom_point()\ngeom_jitter()\n\nDistributions\n\ngeom_histogram()\ngeom_density()\ngeom_boxplot()\ngeom_violin()\n\nStatistics\n\ngeom_smooth()\n\n\nBarplots\n\ngeom_bar()\ngeom_col()\n\nLines\n\ngeom_abline()\ngeom_hline()\ngeom_vline()\n\nText\n\ngeom_text()\ngeom_label()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
     "href": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Scale and Coordinate Modifiers",
     "text": "Scale and Coordinate Modifiers\n\n\nTitles\nModifies text labels on plot,axis, etc\n\nlabs()\nxlab()\nylab()\n\nScales\nChange aspects of axis/channel scales\n\nscale_x_continuous()\n\n_discrete()\n_manual()\n\nscale_color_continuous()\n\n_discrete()\n_manual()\n\nscale_fill_continuous()\n\n_discrete()\n_manual()\n\n\n\nCoordinate Systems\n\ncoord_cartesian()\ncoord_flip()\ncoord_polar()\n\nFaceting\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\nFaceting on the dose variable"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#themes",
     "href": "presentations/ggplot2Intro.html#themes",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Themes",
     "text": "Themes\n\n\nPre-built themes\nAdd these to ggplots as quick theme changes\n\ntheme_grey() default theme in ggplot\ntheme_bw()\ntheme_light()\ntheme_dark()\ntheme_minimal()\ntheme_classic()\ntheme_void()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#themes-1",
     "href": "presentations/ggplot2Intro.html#themes-1",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Themes",
     "text": "Themes\n\n\nTheme function\nExtremely customizable\n\ntheme()\n\ne.g.\nggplot() + theme(axis.text=element_text(size=10))"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#remember-the-pillars",
     "href": "presentations/ggplot2Intro.html#remember-the-pillars",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Remember the pillars!",
     "text": "Remember the pillars!"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
     "href": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
-    "title": "Using ggplot2, an introduction",
+    "title": "ggplot2, an introduction",
     "section": "Googling (& chatGPT!) are your friends",
     "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
   }
