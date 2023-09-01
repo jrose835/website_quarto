@@ -4,7 +4,7 @@ subtitle: "(Quarto Edition!)"
 image: headshot.png
 about:
   template: trestles
-  image-width: 10em
+  image-width: 15em
   links:
     # - text: Twitter
     #   icon: twitter
@@ -25,7 +25,8 @@ about:
       href: mailto:jrrose5@emory.edu
 ---
 
-::: column-page
+::: {.column-page}
+
 ## About Me
 
 Hello! I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
@@ -37,4 +38,5 @@ I plan to use this site to host my contact/CV information, teaching materials fo
 ## Resume
 
 [See my resume](resume.pdf)
+
 :::

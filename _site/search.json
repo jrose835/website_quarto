@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jim Rose’s Website",
     "section": "",
-    "text": "::: column-page {align-items: center} ## About Me\nHello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology."
+    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\n\n\n\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.\n\n\n\nSee my resume"
   },
   {
     "objectID": "Research.html#autoimmunity",
@@ -32,6 +32,13 @@
     "href": "index.html#resume",
     "title": "Jim Rose’s Website",
     "section": "Resume",
-    "text": "Resume\nSee my resume :::"
+    "text": "Resume\nSee my resume\n:::"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Jim Rose’s Website",
+    "section": "About Me",
+    "text": "About Me\nHello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology."
   }
 ]
