@@ -6,9 +6,9 @@ about:
   template: trestles
   image-width: 10em
   links:
-    - text: Twitter
-      icon: twitter
-      url: "https://twitter.com/jimrose835"
+    # - text: Twitter
+    #   icon: twitter
+    #   url: "https://twitter.com/jimrose835"
     - text: Mastodon
       icon: mastodon
       url: "https://genomic.social/@jrose835"
@@ -21,16 +21,20 @@ about:
     - text: Google Scholar
       icon: google
       url: "https://scholar.google.com/citations?user=G2WDGLUAAAAJ&hl=en"
+    - text: Email
+      href: mailto:jrrose5@emory.edu
 ---
 
 ::: column-page
-Hello! This is where I'm building my personal website using Quarto.
-
 ## About Me
 
-I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
+Hello! I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
 
 ## This Site
 
-I plan to use this site to host my contact/CV information as well as a place to highlight side projects I am working on.
+I plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.
+
+## Resume
+
+[See my resume](resume.pdf)
 :::

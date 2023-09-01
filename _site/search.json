@@ -4,27 +4,34 @@
     "href": "index.html",
     "title": "Jim Rose’s Website",
     "section": "",
-    "text": "Hello! This is where I’m building my personal website using Quarto.\n\n\nI’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\n\n\n\nI plan to use this site to host my contact/CV information as well as a place to highlight side projects I am working on."
+    "text": "::: column-page {align-items: center} ## About Me\nHello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology."
+  },
+  {
+    "objectID": "Research.html#autoimmunity",
+    "href": "Research.html#autoimmunity",
+    "title": "Research",
+    "section": "Autoimmunity",
+    "text": "Autoimmunity"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools. I’ve got a particular interest in applying a deeper understanding of statistics to laboratory experiments, understanding how epigenetics regulates gene expression, and using data visualization techniques for genomic data.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms"
+    "text": "I’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools sucha as Python and JavaScript. I’ve got a particular interest in applying a deeper understanding of statistics to large sequencing data sets & laboratory experiments, understanding how epigenetics regulates gene expression, and using data visualization techniques for genomic data.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms domain knowledge\n\n\n\n\nSee my resume"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#this-site",
+    "href": "index.html#this-site",
     "title": "Jim Rose’s Website",
-    "section": "About Me",
-    "text": "About Me\nI’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools. I’ve got a particular interest in applying a deeper understanding of statistics to laboratory experiments as well as data visualization."
+    "section": "This Site",
+    "text": "This Site\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on."
   },
   {
-    "objectID": "index.html#my-focus-areas-include",
-    "href": "index.html#my-focus-areas-include",
+    "objectID": "index.html#resume",
+    "href": "index.html#resume",
     "title": "Jim Rose’s Website",
-    "section": "My focus areas include:",
-    "text": "My focus areas include:\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot..trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics"
+    "section": "Resume",
+    "text": "Resume\nSee my resume :::"
   }
 ]
