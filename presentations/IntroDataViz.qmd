@@ -1,0 +1,212 @@
+---
+title: "Intro to Data Viz"
+author: "Jim Rose"
+institute: "Lecture for IBS519, Fall 2023"
+format: 
+  revealjs:
+    self-contained: true
+editor: visual
+---
+
+## Who am I? {.smaller}
+
+::: columns
+::: {.column width="40%"}
+-   One of your TAs for this course
+
+-   PhD student (5th year, Genetics & Molecular Biology program)
+
+-   Computational immunology/gene regulation research
+
+-   Self-taught coder (R & python)
+:::
+
+::: {.column width="60%"}
+My website (build one for yourself!): ![](./images/website.png)
+:::
+:::
+
+::: {footer}
+<https://jrose835.github.io/JimRose.github.io/>
+:::
+
+## Main Q's for Today:
+
+::: fragment
+1.  Why look at (visualize) data?
+:::
+
+::: fragment
+2.  How should I look at data?
+:::
+
+::: fragment
+3.  What the heck is ggplot2? And how do I use it?
+:::
+
+# Part 1: Why visualize data?
+
+::: fragment
+-   To explore or understand data better
+:::
+
+::: fragment
+-   To convey a point (or make an argument)
+:::
+
+## Visualizing to explore data
+
+Sometimes visualzing data can tell you more than summary statistics...
+
+![](./images/trex.gif)
+
+## Visualizing to convince or make a point
+
+::: columns
+::: {.column width="50%"}
+![](./images/measles.png){height="5in"}
+:::
+
+::: {.column width="50%"}
+![](./images/pfizer.png){height="5in"}
+:::
+:::
+
+## When data visualization goes wrong
+
+::: columns
+::: column
+![](./images/badbar.png){height="5in"}
+:::
+
+::: column
+![](./images/badbar3D.png){height="5in"}
+:::
+:::
+
+# Part 2: How should I visualize data?
+
+"With great power comes great responsibility" -- Uncle Ben Parker
+
+## How should I visualize data?
+
+![](./images/pillars.png)
+
+## Pillar 1: Show the data (honestly)
+
+![](./images/weissgerber.png){fig-align="center" height="5in"}
+
+::: aside
+Weissgerber, T. L., Milic, N. M., Winham, S. J. & Garovic, V. D. Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biology 13, e1002128 (2015).
+:::
+
+## Pillar 2: Think about perception {.scrollable}
+
+::: columns
+::: {.column width="40%"}
+-   You need to think about the WAY your audience's BRAIN will PERCEIVE your chart
+
+-   Perceptual accuracy is influenced by the way you are conveying information.
+
+(i.e. type of chart used)
+:::
+
+::: {.column width="60%"}
+![](./images/perception.png)
+:::
+:::
+
+::: aside
+Some charts enable more accuracy than others!
+:::
+
+## Think about your plot in terms of "channels"
+
+![](./images/channels.png){fig-align="center"}
+
+## Pillar 3: Reduce Clutter
+
+```{r chunk 1}
+#| echo: true
+#| code-fold: true
+#| warning: false
+library(tidyverse)
+
+poke <- read_csv("./DataSets/pokemon.csv")
+
+ggplot(poke, aes(x=Attack, y=Defense)) + 
+  geom_point() +
+  geom_text(aes(label=Name))
+```
+
+## Pillar 3: Reduce Clutter
+
+```{r chunk 2}
+#| echo: true
+#| code-fold: true
+#| warning: false
+library(tidyverse)
+library(ggrepel)
+
+poke <- read_csv("./DataSets/pokemon.csv")
+
+ggplot(data=poke, aes(x=Attack, y=Defense)) + 
+  geom_point(alpha=0.8, color='darkgrey') + geom_text_repel(aes(label=ifelse(Defense>125 | Attack >140, as.character(Name), ""))) + 
+  geom_density2d()
+```
+
+## Pillar 4: Use color strategically
+
+#### To indicate groups or categories
+
+![](./images/minard.png)
+
+## Pillar 4: Use color strategically
+
+#### To highlight
+
+![](./images/fev.png){fig-align="\"center"}
+
+## DON'T MAKE RAINBOW CLOWN VOMIT CHARTS
+
+![](./images/rainbow.png)
+
+## Consider inclusivity when choosing a color palette
+
+::: {layout-ncol="3"}
+![Original](./images/original.png)
+
+![Deuteranope](./images/deu.png)
+
+![Tritanope](./images/trit.png)
+:::
+
+## Pillar 5: Get creative {.scrollable}
+
+::: columns
+::: column
+![](./images/web.png)
+:::
+
+::: column
+![](./images/dubois.jpg) ![](./images/parisfair.jpg)
+
+W.E.B. Du Bois
+
+Paris Exhibition 1900
+:::
+:::
+
+## Consult a chart library or atlas for ideas on chart types
+
+![https://r-graph-gallery.com/](./images/chartlib.png)
+
+## Other great resources {.scrollable}
+
+::: {layout-nrow="3"}
+![Data Visualization with R by Rob Kabacoff, PhD](./images/dvr.png){fig-height="1in"}
+
+![Better Data Visualizations by Jonathan Schwabish](./images/betterdata.png){fig-height="1in"}
+
+![Data Visualization: A Practical Introduction by Kieran Healy](./images/dataviz.png){fig-height="1in"}
+:::

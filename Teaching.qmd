@@ -1,5 +1,12 @@
 ---
 title: "Teaching"
+format:
+  html:
+    link-external-newwindow: true
 ---
 
-## Under construction
+## IBS 519: Statistical Rigor, Reproducibility
+
+* [Introduction to Data Viz](./presentations/IntroDataViz.qmd)
+
+* [Using ggplot2](./presentations/ggplot2Intro.qmd)

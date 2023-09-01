@@ -31,6 +31,8 @@ about:
 
 Hello! I'm a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.
 
+I'm also passionate about teaching coding to biologists, exploring new AI/ML technique applications for sequencing data, and untangling the messy network of gene regulation applied to human disease!
+
 ## This Site
 
 I plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.

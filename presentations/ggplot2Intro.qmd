@@ -1,0 +1,501 @@
+---
+title: "Using ggplot2, an introduction"
+author: "Jim Rose"
+institute: "Lecture for IBS519, Fall 2023"
+format: 
+  revealjs:
+    self-contained: true
+editor: visual
+---
+
+# Part 3: What the heck is ggplot2?
+
+![](./images/ggplothex.png)
+
+## ggplot2 is your first introduction to the tidyverse
+
+![](./images/tidyhex.png){fig-align="center"}
+
+##  {.scrollable}
+
+::: columns
+::: column
+Tidyverse
+
+![](./images/tidyhex.png){height="3in"}
+
+-   A collection of R packages serving different functions but following the same principles
+
+-   Designed to work well together
+
+-   Extremely nerdy
+:::
+
+::: column
+Marvel Universe
+
+![](./images/marvel.jpg){height="3in"}
+
+-   A collection of heros/movies with different skills but following the same principles
+
+-   Frequent crossovers/cameos
+
+-   Extremely nerdy
+:::
+:::
+
+## It is possible to create almost ANY type of graphic using R and ggplot2
+
+![](./images/anygraph.png)
+
+## The Layered Grammar of Graphics of ggplot2 {.smaller}
+
+-   One reason that ggplot2 is so popular is that it uses a **consistent framework**, or "grammar", which makes it both intuitive AND flexible
+
+-   Elements of any chart (i.e. axis, points, bars, text etc) are "layered" on top of each other to form the complete graphic
+
+::: {layout-ncol="2"}
+![](./images/grammar.png){height="1in"}
+
+![The layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham\@fosstodon.org) the creator of ggplot2](./images/hadley.jpg){height="0.5in"}
+:::
+
+## The Layered Grammar of Graphics of ggplot2
+
+::: {.columns style="display: flex !important;"}
+::: column
+![](./images/wickhamlayers.png)
+:::
+
+::: {.column width="50%" style="display: flex; justify-content: center; align-items: center;"}
+"Good grammar is just the first step in creating a good sentence"
+:::
+:::
+
+::: footer
+Wickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3--28 (2010).
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r setup}
+library(ggplot2)
+data=data.frame(A=c(2,1,4,9),B=c(3,2,5,10), C=c(4,1,15,80),D=c("a","a","b","b"))
+```
+
+```{r}
+#| echo: true
+#| eval: false
+ggplot(data=data, aes(x=C, y=A)) #Layer 1
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+Data is always defined in the first layer and is inherited in all subsequent layers
+:::
+:::
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r}
+#| echo: true
+#| eval: true
+ggplot(data=data, aes(x=C, y=A)) #Layer 1
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+Data is always defined in the first layer and is inherited in all subsequent layers
+:::
+:::
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r}
+#| echo: true
+ggplot(data=data, aes(x=C, y=A)) + #Layer 1
+  geom_point() #Layer 2
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+Layers are added together using the "+" operator
+:::
+
+::: callout-important
+Order matters!
+:::
+:::
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r}
+#| echo: true
+ggplot(data=data, aes(x=C, y=A)) + #Layer 1
+  geom_point() + #Layer 2
+  geom_line() #Layer 3
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+`geom_()` functions are used in secondary layers to define the geometric objects used in the plot
+
+You can **add as many geoms** to the plot as you like
+:::
+
+::: callout-important
+But keep in mind the data viz pillars!
+:::
+:::
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r}
+#| code-line-numbers: "4-5"
+#| echo: true
+ggplot(data=data, aes(x=C, y=A)) + #Layer 1
+  geom_point() + #Layer 2
+  geom_line() + #Layer 3
+  coord_flip() + #Layer 4
+  scale_x_continuous(limits=c(1,100)) #Layer 5
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+These functions are added to make changes to the default **coordinate system or axis scales**
+
+They start with the prefixes `coord_` or `scale_x`, `scale_y` respectively
+:::
+:::
+:::
+
+## Anatomy of a ggplot {auto-animate="true"}
+
+::: columns
+::: {.column width="60%" height="90%"}
+```{r}
+#| code-line-numbers: "6"
+#| echo: true
+ggplot(data=data, aes(x=C, y=A)) + #Layer 1
+  geom_point() + #Layer 2
+  geom_line() + #Layer 3
+  coord_flip() + #Layer 4
+  scale_x_continuous(limits=c(1,100)) +#Layer 5
+  theme_classic() #Layer 6
+```
+:::
+
+::: {.column width="40%"}
+::: callout-tip
+Finally, `theme()` functions can be added to alter the default appearance of the plot
+
+e.g. title, axis titles, font size, background color, etc
+:::
+:::
+:::
+
+## Setting properties in geoms
+
+You can change attributes of a layer by specifying them as arguments within the `geom()` function
+
+::: columns
+::: {.column width="30%"}
+![Shape codes in R](./images/shapecodes.png)
+:::
+
+::: {.column width="70%" height="90%"}
+```{r}
+#| echo: true
+
+ggplot(data=data, aes(x=C, y=A)) +
+  geom_point(color="red", shape=12, size=8)
+```
+:::
+:::
+
+## **Mapping** variables to aesthetics using aes()
+
+The `aes()` function is used to **assign variables in your data** to graphical parameters (or channels)
+
+::: columns
+::: column
+-   Position (x,y)
+-   Color (fill, color)
+-   Shape(shape, linetype)
+-   Size (size)
+-   Transparency (alpha)
+-   Groupings (group)
+:::
+
+::: column
+::: callout-important
+Syntax note: Variable names do **NOT** use quotes when used inside aes()
+:::
+:::
+:::
+
+## Setting vs Mapping
+
+::: columns
+::: {.column width="50%" height="90%"}
+#### Setting static attribute
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+
+ggplot(data=data, aes(x=C, y=A)) +
+geom_point(color="red", size=8)
+```
+:::
+
+::: {.column width="50%" height="90%"}
+#### Mapping to data
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+
+ggplot(data=data, aes(x=C, y=A)) +
+geom_point(aes(color=D, size=C))
+```
+:::
+:::
+
+```{r}
+print("data")
+data
+```
+
+## Globally vs locally mapping variables
+
+::: columns
+::: {.column width="50%" height="90%"}
+#### Local Mapping
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+
+ggplot(data=data, aes(x=C, y=A)) +
+geom_point(aes(color=D)) +
+geom_line()
+```
+:::
+
+::: {.column width="50%" height="90%"}
+#### Global Mapping
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1"
+
+ggplot(data=data, aes(x=C, y=A, color=D)) +
+geom_point() +
+geom_line()
+```
+:::
+:::
+
+::: callout-note
+Aesthetics set within the original layer will be applied to all later layers/geoms
+:::
+
+## Saving ggplots
+
+ggplots can be stored as objects in R
+
+```{r}
+#| echo: true
+
+plot <- ggplot(data=data, aes(x=C, y=A)) +
+geom_point(aes(color=D)) +
+geom_line()
+```
+
+Use `ggsave()` to save jpg, png, pdf versions of plots
+
+```{r}
+#| echo: true
+
+plot
+ggsave(filename="myfirstplot.pdf", plot, height=4, width=4)
+```
+
+## Basic geoms {.smaller}
+
+::: columns
+::: column
+#### Points
+
+-   geom_point()
+-   geom_jitter()
+
+#### Distributions
+
+-   geom_histogram()
+-   geom_density()
+-   geom_boxplot()
+-   geom_violin()
+
+#### Statistics
+
+-   geom_smooth()
+:::
+
+::: column
+#### Barplots
+
+-   geom_bar()
+-   geom_col()
+
+#### Lines
+
+-   geom_abline()
+-   geom_hline()
+-   geom_vline()
+
+#### Text
+
+-   geom_text()
+-   geom_label()
+:::
+:::
+
+## Scale and Coordinate Modifiers {.smaller}
+
+::: columns
+::: column
+#### Titles
+
+*Modifies text labels on plot,axis, etc*
+
+-   labs()
+
+-   xlab()
+
+-   ylab()
+
+#### Scales
+
+*Change aspects of axis/channel scales*
+
+-   scale_x\_continuous()
+
+    -   \_discrete()
+
+    -   \_manual()
+
+-   scale_color_continuous()
+
+    -   \_discrete()
+
+    -   \_manual()
+
+-   scale_fill_continuous()
+
+    -   \_discrete()
+
+    -   \_manual()
+:::
+
+::: column
+#### Coordinate Systems
+
+-   coord_cartesian()
+-   coord_flip()
+-   coord_polar()
+
+#### Faceting
+
+-   facet_grid()
+-   facet_wrap()
+
+![Faceting on the dose variable](./images/facet.png)
+:::
+:::
+
+## Themes {.smaller}
+
+::: columns
+::: {.column width="30%"}
+#### Pre-built themes
+
+*Add these to ggplots as quick theme changes*
+
+-   theme_grey() *default theme in ggplot*
+
+-   theme_bw()
+
+-   theme_light()
+
+-   theme_dark()
+
+-   theme_minimal()
+
+-   theme_classic()
+
+-   theme_void()
+:::
+
+::: {.column width="70%"}
+![](./images/themes.png){height="90%"}
+:::
+:::
+
+## Themes {.smaller}
+
+::: columns
+::: {.column width="30%"}
+#### Theme function
+
+*Extremely customizable*
+
+-   theme()
+
+e.g.
+
+```         
+ggplot() + theme(axis.text=element_text(size=10))
+```
+:::
+
+::: {.column width="70%"}
+![](./images/themes.png){height="90%"}
+:::
+:::
+
+## Remember the pillars!
+
+![](./images/pillars.png)
+
+## Googling (& chatGPT!) are your friends
+
+#### Resources:
+
+-   <https://rkabacoff.github.io/datavis/>
+
+-   <https://ggplot2.tidyverse.org/reference/index.html>
+
+-   <https://www.datanovia.com/en/blog/category/ggplot2/>
+
+-   <https://github.com/thomasp85/ggraph>

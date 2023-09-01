@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jim Rose’s Website",
     "section": "",
-    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\n\n\n\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.\n\n\n\nSee my resume"
+    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m also passionate about teaching coding to biologists, exploring new AI/ML technique applications for sequencing data, and untangling the messy network of gene regulation applied to human disease!\n\n\n\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.\n\n\n\nSee my resume"
   },
   {
     "objectID": "Research.html#autoimmunity",
@@ -18,27 +18,293 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I’m a self-taught coder who works primarily in R on a daily basis, but I’ve also branched out to a few other languages and tools sucha as Python and JavaScript. I’ve got a particular interest in applying a deeper understanding of statistics to large sequencing data sets & laboratory experiments, understanding how epigenetics regulates gene expression, and using data visualization techniques for genomic data.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms domain knowledge\n\n\n\n\nSee my resume"
+    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nI’ve got a particular interest in applying statistics, network analysis, and AI/ML natural language processing tools to large sequencing data sets & laboratory experiments.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume"
   },
   {
-    "objectID": "index.html#this-site",
-    "href": "index.html#this-site",
-    "title": "Jim Rose’s Website",
-    "section": "This Site",
-    "text": "This Site\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on."
+    "objectID": "Teaching.html",
+    "href": "Teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Introduction to Data Viz\nUsing ggplot2"
   },
   {
-    "objectID": "index.html#resume",
-    "href": "index.html#resume",
-    "title": "Jim Rose’s Website",
-    "section": "Resume",
-    "text": "Resume\nSee my resume\n:::"
+    "objectID": "presentations/IntroDataViz.html#who-am-i",
+    "href": "presentations/IntroDataViz.html#who-am-i",
+    "title": "Intro to Data Viz",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\nOne of your TAs for this course\nPhD student (5th year, Genetics & Molecular Biology program)\nComputational immunology/gene regulation research\nSelf-taught coder (R & python)\n\n\nMy website (build one for yourself!): \n\n\n\nhttps://jrose835.github.io/JimRose.github.io/"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Jim Rose’s Website",
-    "section": "About Me",
-    "text": "About Me\nHello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology."
+    "objectID": "presentations/IntroDataViz.html#main-qs-for-today",
+    "href": "presentations/IntroDataViz.html#main-qs-for-today",
+    "title": "Intro to Data Viz",
+    "section": "Main Q’s for Today:",
+    "text": "Main Q’s for Today:\n\n\nWhy look at (visualize) data?\n\n\n\n\nHow should I look at data?\n\n\n\n\nWhat the heck is ggplot2? And how do I use it?"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#visualizing-to-explore-data",
+    "href": "presentations/IntroDataViz.html#visualizing-to-explore-data",
+    "title": "Intro to Data Viz",
+    "section": "Visualizing to explore data",
+    "text": "Visualizing to explore data\nSometimes visualzing data can tell you more than summary statistics…"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
+    "href": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
+    "title": "Intro to Data Viz",
+    "section": "Visualizing to convince or make a point",
+    "text": "Visualizing to convince or make a point"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
+    "href": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
+    "title": "Intro to Data Viz",
+    "section": "When data visualization goes wrong",
+    "text": "When data visualization goes wrong"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#how-should-i-visualize-data",
+    "href": "presentations/IntroDataViz.html#how-should-i-visualize-data",
+    "title": "Intro to Data Viz",
+    "section": "How should I visualize data?",
+    "text": "How should I visualize data?"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
+    "href": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 1: Show the data (honestly)",
+    "text": "Pillar 1: Show the data (honestly)\n\n\n\n\n\n\n\nWeissgerber, T. L., Milic, N. M., Winham, S. J. & Garovic, V. D. Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biology 13, e1002128 (2015)."
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
+    "href": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 2: Think about perception",
+    "text": "Pillar 2: Think about perception\n\n\n\nYou need to think about the WAY your audience’s BRAIN will PERCEIVE your chart\nPerceptual accuracy is influenced by the way you are conveying information.\n\n(i.e. type of chart used)\n\n\n\n\n\n\nSome charts enable more accuracy than others!"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
+    "href": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
+    "title": "Intro to Data Viz",
+    "section": "Think about your plot in terms of “channels”",
+    "text": "Think about your plot in terms of “channels”"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
+    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 3: Reduce Clutter",
+    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\n\npoke <- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(poke, aes(x=Attack, y=Defense)) + \n  geom_point() +\n  geom_text(aes(label=Name))"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
+    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 3: Reduce Clutter",
+    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggrepel)\n\npoke <- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(data=poke, aes(x=Attack, y=Defense)) + \n  geom_point(alpha=0.8, color='darkgrey') + geom_text_repel(aes(label=ifelse(Defense>125 | Attack >140, as.character(Name), \"\"))) + \n  geom_density2d()"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
+    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 4: Use color strategically",
+    "text": "Pillar 4: Use color strategically\nTo indicate groups or categories"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
+    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 4: Use color strategically",
+    "text": "Pillar 4: Use color strategically\nTo highlight"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
+    "href": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
+    "title": "Intro to Data Viz",
+    "section": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS",
+    "text": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
+    "href": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
+    "title": "Intro to Data Viz",
+    "section": "Consider inclusivity when choosing a color palette",
+    "text": "Consider inclusivity when choosing a color palette\n\n\n\n\n\n\nOriginal\n\n\n\n\n\n\n\nDeuteranope\n\n\n\n\n\n\n\nTritanope"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-5-get-creative",
+    "href": "presentations/IntroDataViz.html#pillar-5-get-creative",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 5: Get creative",
+    "text": "Pillar 5: Get creative\n\n\n\n\n \nW.E.B. Du Bois\nParis Exhibition 1900"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
+    "href": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
+    "title": "Intro to Data Viz",
+    "section": "Consult a chart library or atlas for ideas on chart types",
+    "text": "Consult a chart library or atlas for ideas on chart types\n\nhttps://r-graph-gallery.com/"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#other-great-resources",
+    "href": "presentations/IntroDataViz.html#other-great-resources",
+    "title": "Intro to Data Viz",
+    "section": "Other great resources",
+    "text": "Other great resources\n\n\n\n\n\n\nData Visualization with R by Rob Kabacoff, PhD\n\n\n\n\n\n\n\n\n\nBetter Data Visualizations by Jonathan Schwabish\n\n\n\n\n\n\n\n\n\nData Visualization: A Practical Introduction by Kieran Healy"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
+    "href": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
+    "title": "Using ggplot2, an introduction",
+    "section": "ggplot2 is your first introduction to the tidyverse",
+    "text": "ggplot2 is your first introduction to the tidyverse"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#section",
+    "href": "presentations/ggplot2Intro.html#section",
+    "title": "Using ggplot2, an introduction",
+    "section": "",
+    "text": "Tidyverse\n\n\nA collection of R packages serving different functions but following the same principles\nDesigned to work well together\nExtremely nerdy\n\n\nMarvel Universe\n\n\nA collection of heros/movies with different skills but following the same principles\nFrequent crossovers/cameos\nExtremely nerdy"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#it-is-possible-to-create-almost-any-type-of-graphic-using-r-and-ggplot2",
+    "href": "presentations/ggplot2Intro.html#it-is-possible-to-create-almost-any-type-of-graphic-using-r-and-ggplot2",
+    "title": "Using ggplot2, an introduction",
+    "section": "It is possible to create almost ANY type of graphic using R and ggplot2",
+    "text": "It is possible to create almost ANY type of graphic using R and ggplot2"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
+    "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
+    "title": "Using ggplot2, an introduction",
+    "section": "The Layered Grammar of Graphics of ggplot2",
+    "text": "The Layered Grammar of Graphics of ggplot2\n\nOne reason that ggplot2 is so popular is that it uses a consistent framework, or “grammar”, which makes it both intuitive AND flexible\nElements of any chart (i.e. axis, points, bars, text etc) are “layered” on top of each other to form the complete graphic\n\n\n\n\n\n\n\n\n\n\nThe layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham@fosstodon.org) the creator of ggplot2"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
+    "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
+    "title": "Using ggplot2, an introduction",
+    "section": "The Layered Grammar of Graphics of ggplot2",
+    "text": "The Layered Grammar of Graphics of ggplot2\n\n\n\n\n“Good grammar is just the first step in creating a good sentence”\n\n\n\nWickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3–28 (2010)."
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() #Layer 2\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nLayers are added together using the “+” operator\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOrder matters!"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() #Layer 3\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\ngeom_() functions are used in secondary layers to define the geometric objects used in the plot\nYou can add as many geoms to the plot as you like\n\n\n\n\n\n\n\n\n\nImportant\n\n\nBut keep in mind the data viz pillars!"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) #Layer 5\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThese functions are added to make changes to the default coordinate system or axis scales\nThey start with the prefixes coord_ or scale_x, scale_y respectively"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
+    "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
+    "title": "Using ggplot2, an introduction",
+    "section": "Anatomy of a ggplot",
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) +#Layer 5\n  theme_classic() #Layer 6\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFinally, theme() functions can be added to alter the default appearance of the plot\ne.g. title, axis titles, font size, background color, etc"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
+    "href": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
+    "title": "Using ggplot2, an introduction",
+    "section": "Setting properties in geoms",
+    "text": "Setting properties in geoms\nYou can change attributes of a layer by specifying them as arguments within the geom() function\n\n\n\n\n\nShape codes in R\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\n  geom_point(color=\"red\", shape=12, size=8)"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
+    "href": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
+    "title": "Using ggplot2, an introduction",
+    "section": "Mapping variables to aesthetics using aes()",
+    "text": "Mapping variables to aesthetics using aes()\nThe aes() function is used to assign variables in your data to graphical parameters (or channels)\n\n\n\nPosition (x,y)\nColor (fill, color)\nShape(shape, linetype)\nSize (size)\nTransparency (alpha)\nGroupings (group)\n\n\n\n\n\n\n\n\nImportant\n\n\nSyntax note: Variable names do NOT use quotes when used inside aes()"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#setting-vs-mapping",
+    "href": "presentations/ggplot2Intro.html#setting-vs-mapping",
+    "title": "Using ggplot2, an introduction",
+    "section": "Setting vs Mapping",
+    "text": "Setting vs Mapping\n\n\nSetting static attribute\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(color=\"red\", size=8)\n\n\n\n\n\nMapping to data\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D, size=C))\n\n\n\n\n\n\n\n\n[1] \"data\"\n\n\n  A  B  C D\n1 2  3  4 a\n2 1  2  1 a\n3 4  5 15 b\n4 9 10 80 b"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
+    "href": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
+    "title": "Using ggplot2, an introduction",
+    "section": "Globally vs locally mapping variables",
+    "text": "Globally vs locally mapping variables\n\n\nLocal Mapping\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\n\n\n\n\nGlobal Mapping\n\nggplot(data=data, aes(x=C, y=A, color=D)) +\ngeom_point() +\ngeom_line()\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAesthetics set within the original layer will be applied to all later layers/geoms"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#saving-ggplots",
+    "href": "presentations/ggplot2Intro.html#saving-ggplots",
+    "title": "Using ggplot2, an introduction",
+    "section": "Saving ggplots",
+    "text": "Saving ggplots\nggplots can be stored as objects in R\n\nplot <- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#basic-geoms",
+    "href": "presentations/ggplot2Intro.html#basic-geoms",
+    "title": "Using ggplot2, an introduction",
+    "section": "Basic geoms",
+    "text": "Basic geoms\n\n\nPoints\n\ngeom_point()\ngeom_jitter()\n\nDistributions\n\ngeom_histogram()\ngeom_density()\ngeom_boxplot()\ngeom_violin()\n\nStatistics\n\ngeom_smooth()\n\n\nBarplots\n\ngeom_bar()\ngeom_col()\n\nLines\n\ngeom_abline()\ngeom_hline()\ngeom_vline()\n\nText\n\ngeom_text()\ngeom_label()"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
+    "href": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
+    "title": "Using ggplot2, an introduction",
+    "section": "Scale and Coordinate Modifiers",
+    "text": "Scale and Coordinate Modifiers\n\n\nTitles\nModifies text labels on plot,axis, etc\n\nlabs()\nxlab()\nylab()\n\nScales\nChange aspects of axis/channel scales\n\nscale_x_continuous()\n\n_discrete()\n_manual()\n\nscale_color_continuous()\n\n_discrete()\n_manual()\n\nscale_fill_continuous()\n\n_discrete()\n_manual()\n\n\n\nCoordinate Systems\n\ncoord_cartesian()\ncoord_flip()\ncoord_polar()\n\nFaceting\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\nFaceting on the dose variable"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#themes",
+    "href": "presentations/ggplot2Intro.html#themes",
+    "title": "Using ggplot2, an introduction",
+    "section": "Themes",
+    "text": "Themes\n\n\nPre-built themes\nAdd these to ggplots as quick theme changes\n\ntheme_grey() default theme in ggplot\ntheme_bw()\ntheme_light()\ntheme_dark()\ntheme_minimal()\ntheme_classic()\ntheme_void()"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#themes-1",
+    "href": "presentations/ggplot2Intro.html#themes-1",
+    "title": "Using ggplot2, an introduction",
+    "section": "Themes",
+    "text": "Themes\n\n\nTheme function\nExtremely customizable\n\ntheme()\n\ne.g.\nggplot() + theme(axis.text=element_text(size=10))"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#remember-the-pillars",
+    "href": "presentations/ggplot2Intro.html#remember-the-pillars",
+    "title": "Using ggplot2, an introduction",
+    "section": "Remember the pillars!",
+    "text": "Remember the pillars!"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
+    "href": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
+    "title": "Using ggplot2, an introduction",
+    "section": "Googling (& chatGPT!) are your friends",
+    "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
   }
 ]
