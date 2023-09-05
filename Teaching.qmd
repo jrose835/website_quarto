@@ -13,8 +13,7 @@ listing:
 
 ## IBS 519: Statistical Rigor, Reproducibility
 
-I've had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I've created!
+I've had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I've created.
 
-:::{#landing-posts}
-
+::: {#landing-posts}
 :::

@@ -25,7 +25,7 @@
     "href": "Teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created!"
+    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
   },
   {
     "objectID": "presentations/IntroDataViz.html#who-am-i",
@@ -306,5 +306,19 @@
     "title": "ggplot2, an introduction",
     "section": "Googling (& chatGPT!) are your friends",
     "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
+  },
+  {
+    "objectID": "Research.html",
+    "href": "Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation"
+  },
+  {
+    "objectID": "Research.html#epigenetic-memory-in-t-cells",
+    "href": "Research.html#epigenetic-memory-in-t-cells",
+    "title": "Research",
+    "section": "Epigenetic Memory in T cells",
+    "text": "Epigenetic Memory in T cells\nRose, J.R., Akdogan-Ozdilek, B., Rahmberg, A.R. et al. Distinct transcriptomic and epigenomic modalities underpin human memory T cell subsets and their activation potential. Commun Biol 6, 363 (2023).\nLink to article\n\n\n\nIntegrated RNA & ATACseq analysis of memory T cells\nMemory T cells exhibited unique chromatin accessibility regions before and after secondary activation (PARs)\nPARs helped to distinguish distinct subtypes of memory T cells"
   }
 ]

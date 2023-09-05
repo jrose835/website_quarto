@@ -2,8 +2,45 @@
 title: "Research"
 ---
 
+## Autoimmunity
+
+*Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome* 
+
+**In preparation**
+
+:::: columns
+
+:::{.column}
+
+:::
+
+:::{.column}
+![](./images/SLEsep_model.png)
+:::
+
+::::
+
 ## Epigenetic Memory in T cells
 
+*Rose, J.R., Akdogan-Ozdilek, B., Rahmberg, A.R. et al. Distinct transcriptomic and epigenomic modalities underpin human memory T cell subsets and their activation potential. Commun Biol 6, 363 (2023).*
 
-## Autoimmunity
+[Link to article](https://rdcu.be/dlpaI)
+
+
+
+:::: columns
+
+:::{.column}
+
+* Integrated RNA & ATACseq analysis of memory T cells
+* Memory T cells exhibited unique chromatin accessibility regions before and after secondary activation (*PARs*)
+* PARs helped to distinguish distinct subtypes of memory T cells
+
+:::
+
+:::{.column}
+![](./images/model_figure_v2.png){fig-height="40%"}
+:::
+
+::::
 
