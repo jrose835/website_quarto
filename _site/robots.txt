@@ -1,1 +1,1 @@
-Sitemap: https://quartopub.com/sites/jrose835/jimrose_quartosite/sitemap.xml
+Sitemap: https://jrose835.quarto.pub/jimrose_quartosite/sitemap.xml

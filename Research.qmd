@@ -2,11 +2,13 @@
 title: "Research"
 ---
 
+This page showcases the main research projects I've worked on during my PhD
+
 ## Autoimmunity
 
 *Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome*
 
-*In preparation*
+*Manuscript in preparation*
 
 ::: columns
 ::: column

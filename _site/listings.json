@@ -1,15 +1,15 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/JimR_Inspirit_Presentation.html"
+    ]
+  },
+  {
     "listing": "/Teaching.html",
     "items": [
       "/presentations/IntroDataViz.html",
       "/presentations/ggplot2Intro.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/posts/JimR_Inspirit_Presentation.html"
     ]
   }
 ]
