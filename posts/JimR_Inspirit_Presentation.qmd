@@ -1,0 +1,108 @@
+---
+title: "What if BlockBuster Had ML to Help Them Stock Their Shelves...?"
+subtitle: "Inspirit AI Project Presentation" 
+author: "Jim Rose"
+date: "Aug 17 2023"
+image: ./images/blockbuster.jpg
+format: 
+  revealjs:
+    self-contained: true
+title-slide-attributes: 
+  data-background-image: "./images/blockbuster.jpg"
+  data-background-size: cover
+  #data-background-position: bottom right
+  data-background-opacity: "0.5"
+css: style.css
+editor: visual
+---
+
+## The Problem {.smaller}
+
+::: columns
+::: {.column width="30%"}
+#### Movie Genre Classification {.bottom}
+
+Can we help create a fully *automated* blockbuster by classifying new movies into the correct genre section based only on their description?
+
+We'll use a data set of **54214 movies** with their:
+
+-   genre (label)
+-   descriptions (input)
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="57%"}
+![](./images/genre_count.png)
+:::
+:::
+
+::: aside
+An NLP multi-class classification problem with MANY classes of unequal sizes
+:::
+
+## Custom-trained Word2Vec embeddings performed better than pretrained models {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Embedding Models Used:
+
+-   Glove pre-trained "Wiki-gigaword 300" model ("glove")
+-   Spacy pre-trained word2vec model ("SpCyw2v")
+-   Word2Vec model trained on my movie description data ("myw2v")
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="47%"}
+Baseline Models: Logistic Regression
+
+#### Validation Accuracy
+
+![](./images/baseline.png)
+:::
+:::
+
+## Over/under fitting depending on model complexity {.smaller}
+
+::: columns
+::: {.column width="60%"}
+**Accuracy** ![](./images/train_val_300)
+:::
+
+::: {.column width="30%"}
+Next, I tried a series of models of increasing complexity
+
+::: callout-note
+**Simpler, linear models underfit the data**
+
+**More complex models overfit**
+
+Without further tweaking the simple models won out on validation set accuraacy for now
+:::
+:::
+:::
+
+## Shortening embedding vector lengths helped some models {.smaller}
+
+::: columns
+::: {.column width="55%"}
+![](./images/train_val_compare.png)
+:::
+
+::: {.column width="35%"}
+I recreated the embeddings using **vectors of length 100 instead of the original 300**...which seem to help to increase validation accuracy for some models like RandomForest
+
+#### What I'd do next:
+
+Perhaps the overfitting can be overcome by full-scale hyperparameter tuning?
+:::
+:::
+
+## Thank you! {.center}
+
+::: r-fit-text
+Big shout out to Anil for being a great small group instructor!
+:::
