@@ -22,7 +22,7 @@ about:
       icon: google
       url: "https://scholar.google.com/citations?user=G2WDGLUAAAAJ&hl=en"
     - text: Email
-      href: mailto:jrrose5@emory.edu
+      href: mailto:jrose835@gmail.com
 ---
 
 ::: column-page

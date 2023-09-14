@@ -4,21 +4,21 @@ title: "Research"
 
 ## Autoimmunity
 
-*Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome* 
+*Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome*
 
-**In preparation**
+*In preparation*
 
-:::: columns
+::: columns
+::: column
+- Multi-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients
 
-:::{.column}
-
+- Motivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?
 :::
 
-:::{.column}
+::: column
 ![](./images/SLEsep_model.png)
 :::
-
-::::
+:::
 
 ## Epigenetic Memory in T cells
 
@@ -26,21 +26,14 @@ title: "Research"
 
 [Link to article](https://rdcu.be/dlpaI)
 
-
-
-:::: columns
-
-:::{.column}
-
-* Integrated RNA & ATACseq analysis of memory T cells
-* Memory T cells exhibited unique chromatin accessibility regions before and after secondary activation (*PARs*)
-* PARs helped to distinguish distinct subtypes of memory T cells
-
+::: columns
+::: column
+-   Integrated RNA & ATACseq analysis of memory T cells
+-   Memory T cells exhibited unique chromatin accessibility regions before and after secondary activation (*PARs*)
+-   PARs helped to distinguish distinct subtypes of memory T cells
 :::
 
-:::{.column}
+::: column
 ![](./images/model_figure_v2.png){fig-height="40%"}
 :::
-
-::::
-
+:::

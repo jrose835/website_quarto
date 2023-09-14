@@ -4,9 +4,9 @@ title: "About"
 
 ## More About Me
 
-I'm a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed). 
+I'm a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).
 
-I've got a particular interest in applying statistics, network analysis, and AI/ML natural language processing tools to large sequencing data sets & laboratory experiments.
+My specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.
 
 ### My focus areas include:
 
@@ -31,3 +31,12 @@ I've got a particular interest in applying statistics, network analysis, and AI/
 ### Resume
 
 [See my resume](resume.pdf)
+
+
+### Other interests
+
+- Blues/jazz guitar
+
+- Science fiction
+
+- Craft beer

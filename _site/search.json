@@ -10,15 +10,15 @@
     "objectID": "Research.html#autoimmunity",
     "href": "Research.html#autoimmunity",
     "title": "Research",
-    "section": "Autoimmunity",
-    "text": "Autoimmunity"
+    "section": "",
+    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation\n\n\n\nMulti-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients\nMotivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nI’ve got a particular interest in applying statistics, network analysis, and AI/ML natural language processing tools to large sequencing data sets & laboratory experiments.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume"
+    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nMy specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume\n\n\n\n\nBlues/jazz guitar\nScience fiction\nCraft beer"
   },
   {
     "objectID": "Teaching.html",
@@ -193,7 +193,7 @@
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
     "title": "ggplot2, an introduction",
     "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
+    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
@@ -263,7 +263,7 @@
     "href": "presentations/ggplot2Intro.html#saving-ggplots",
     "title": "ggplot2, an introduction",
     "section": "Saving ggplots",
-    "text": "Saving ggplots\nggplots can be stored as objects in R\n\nplot <- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
+    "text": "Saving ggplots\nggplots can be stored as objects in R\n\nplot &lt;- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#basic-geoms",
@@ -312,7 +312,7 @@
     "href": "Research.html",
     "title": "Research",
     "section": "",
-    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation"
+    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation\n\n\n\nMulti-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients\nMotivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?"
   },
   {
     "objectID": "Research.html#epigenetic-memory-in-t-cells",
@@ -320,5 +320,40 @@
     "title": "Research",
     "section": "Epigenetic Memory in T cells",
     "text": "Epigenetic Memory in T cells\nRose, J.R., Akdogan-Ozdilek, B., Rahmberg, A.R. et al. Distinct transcriptomic and epigenomic modalities underpin human memory T cell subsets and their activation potential. Commun Biol 6, 363 (2023).\nLink to article\n\n\n\nIntegrated RNA & ATACseq analysis of memory T cells\nMemory T cells exhibited unique chromatin accessibility regions before and after secondary activation (PARs)\nPARs helped to distinguish distinct subtypes of memory T cells"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Jim Rose’s Website",
+    "section": "",
+    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m also passionate about teaching coding to biologists, exploring new AI/ML technique applications for sequencing data, and untangling the messy network of gene regulation applied to human disease!"
+  },
+  {
+    "objectID": "index.html#this-site",
+    "href": "index.html#this-site",
+    "title": "Jim Rose’s Website",
+    "section": "",
+    "text": "I plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on."
+  },
+  {
+    "objectID": "index.html#resume",
+    "href": "index.html#resume",
+    "title": "Jim Rose’s Website",
+    "section": "",
+    "text": "See my resume"
+  },
+  {
+    "objectID": "about.html#more-about-me",
+    "href": "about.html#more-about-me",
+    "title": "About",
+    "section": "",
+    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nMy specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume\n\n\n\n\nBlues/jazz guitar\nScience fiction\nCraft beer"
+  },
+  {
+    "objectID": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
+    "href": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
+    "title": "Teaching",
+    "section": "",
+    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
   }
 ]
