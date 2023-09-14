@@ -5,5 +5,11 @@
       "/presentations/IntroDataViz.html",
       "/presentations/ggplot2Intro.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/JimR_Inspirit_Presentation.html"
+    ]
   }
 ]

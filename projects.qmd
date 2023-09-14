@@ -1,0 +1,21 @@
+---
+title: "Projects"
+format:
+  html:
+    link-external-newwindow: true
+listing:
+  - id: posts
+    contents: posts
+    type: grid
+    max-items: 8
+    grid-columns: 2
+---
+
+This page showcases side projects I've worked on.
+
+## Inspirit NLP Project
+
+In the summer of 2023 I took a short course on AI/ML methods through the Inspirit program. This presentation summed up a quick project I tackled introducing myself to the concept of embeddings, NLP, and multi-class prediction problems!
+
+::: {#landing-posts}
+:::

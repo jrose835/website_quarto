@@ -1,159 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jim Rose’s Website",
-    "section": "",
-    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m also passionate about teaching coding to biologists, exploring new AI/ML technique applications for sequencing data, and untangling the messy network of gene regulation applied to human disease!\n\n\n\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.\n\n\n\nSee my resume"
-  },
-  {
-    "objectID": "Research.html#autoimmunity",
-    "href": "Research.html#autoimmunity",
-    "title": "Research",
-    "section": "",
-    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation\n\n\n\nMulti-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients\nMotivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nMy specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume\n\n\n\n\nBlues/jazz guitar\nScience fiction\nCraft beer"
-  },
-  {
-    "objectID": "Teaching.html",
-    "href": "Teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#who-am-i",
-    "href": "presentations/IntroDataViz.html#who-am-i",
-    "title": "Intro to Data Viz",
-    "section": "Who am I?",
-    "text": "Who am I?\n\n\n\nOne of your TAs for this course\nPhD student (5th year, Genetics & Molecular Biology program)\nComputational immunology/gene regulation research\nSelf-taught coder (R & python)\n\n\nMy website (build one for yourself!): \n\n\n\nhttps://jrose835.quarto.pub/jimrose_quartosite/"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#main-qs-for-today",
-    "href": "presentations/IntroDataViz.html#main-qs-for-today",
-    "title": "Intro to Data Viz",
-    "section": "Main Q’s for Today:",
-    "text": "Main Q’s for Today:\n\n\nWhy look at (visualize) data?\n\n\n\n\nHow should I look at data?\n\n\n\n\nWhat the heck is ggplot2? And how do I use it?"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#visualizing-to-explore-data",
-    "href": "presentations/IntroDataViz.html#visualizing-to-explore-data",
-    "title": "Intro to Data Viz",
-    "section": "Visualizing to explore data",
-    "text": "Visualizing to explore data\nSometimes visualzing data can tell you more than summary statistics…"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
-    "href": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
-    "title": "Intro to Data Viz",
-    "section": "Visualizing to convince or make a point",
-    "text": "Visualizing to convince or make a point"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
-    "href": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
-    "title": "Intro to Data Viz",
-    "section": "When data visualization goes wrong",
-    "text": "When data visualization goes wrong"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#how-should-i-visualize-data",
-    "href": "presentations/IntroDataViz.html#how-should-i-visualize-data",
-    "title": "Intro to Data Viz",
-    "section": "How should I visualize data?",
-    "text": "How should I visualize data?"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
-    "href": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 1: Show the data (honestly)",
-    "text": "Pillar 1: Show the data (honestly)\n\n\n\n\n\n\n\nWeissgerber, T. L., Milic, N. M., Winham, S. J. & Garovic, V. D. Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biology 13, e1002128 (2015)."
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
-    "href": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 2: Think about perception",
-    "text": "Pillar 2: Think about perception\n\n\n\nYou need to think about the WAY your audience’s BRAIN will PERCEIVE your chart\nPerceptual accuracy is influenced by the way you are conveying information.\n\n(i.e. type of chart used)\n\n\n\n\n\n\nSome charts enable more accuracy than others!"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
-    "href": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
-    "title": "Intro to Data Viz",
-    "section": "Think about your plot in terms of “channels”",
-    "text": "Think about your plot in terms of “channels”"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
-    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 3: Reduce Clutter",
-    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\n\npoke <- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(poke, aes(x=Attack, y=Defense)) + \n  geom_point() +\n  geom_text(aes(label=Name))"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
-    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 3: Reduce Clutter",
-    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggrepel)\n\npoke <- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(data=poke, aes(x=Attack, y=Defense)) + \n  geom_point(alpha=0.8, color='darkgrey') + geom_text_repel(aes(label=ifelse(Defense>125 | Attack >140, as.character(Name), \"\"))) + \n  geom_density2d()"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
-    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 4: Use color strategically",
-    "text": "Pillar 4: Use color strategically\nTo indicate groups or categories"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
-    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 4: Use color strategically",
-    "text": "Pillar 4: Use color strategically\nTo highlight"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
-    "href": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
-    "title": "Intro to Data Viz",
-    "section": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS",
-    "text": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
-    "href": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
-    "title": "Intro to Data Viz",
-    "section": "Consider inclusivity when choosing a color palette",
-    "text": "Consider inclusivity when choosing a color palette\n\n\n\n\n\n\nOriginal\n\n\n\n\n\n\n\nDeuteranope\n\n\n\n\n\n\n\nTritanope"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#pillar-5-get-creative",
-    "href": "presentations/IntroDataViz.html#pillar-5-get-creative",
-    "title": "Intro to Data Viz",
-    "section": "Pillar 5: Get creative",
-    "text": "Pillar 5: Get creative\n\n\n\n\n \nW.E.B. Du Bois\nParis Exhibition 1900"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
-    "href": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
-    "title": "Intro to Data Viz",
-    "section": "Consult a chart library or atlas for ideas on chart types",
-    "text": "Consult a chart library or atlas for ideas on chart types\n\nhttps://r-graph-gallery.com/"
-  },
-  {
-    "objectID": "presentations/IntroDataViz.html#other-great-resources",
-    "href": "presentations/IntroDataViz.html#other-great-resources",
-    "title": "Intro to Data Viz",
-    "section": "Other great resources",
-    "text": "Other great resources\n\n\n\n\n\n\nData Visualization with R by Rob Kabacoff, PhD\n\n\n\n\n\n\n\n\n\nBetter Data Visualizations by Jonathan Schwabish\n\n\n\n\n\n\n\n\n\nData Visualization: A Practical Introduction by Kieran Healy"
-  },
-  {
     "objectID": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
     "href": "presentations/ggplot2Intro.html#ggplot2-is-your-first-introduction-to-the-tidyverse",
     "title": "ggplot2, an introduction",
@@ -308,8 +154,29 @@
     "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
   },
   {
+    "objectID": "Teaching.html",
+    "href": "Teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
+  },
+  {
+    "objectID": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
+    "href": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
+    "title": "Teaching",
+    "section": "",
+    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
+  },
+  {
     "objectID": "Research.html",
     "href": "Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation\n\n\n\nMulti-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients\nMotivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?"
+  },
+  {
+    "objectID": "Research.html#autoimmunity",
+    "href": "Research.html#autoimmunity",
     "title": "Research",
     "section": "",
     "text": "Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome\nIn preparation\n\n\n\nMulti-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients\nMotivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?"
@@ -320,6 +187,13 @@
     "title": "Research",
     "section": "Epigenetic Memory in T cells",
     "text": "Epigenetic Memory in T cells\nRose, J.R., Akdogan-Ozdilek, B., Rahmberg, A.R. et al. Distinct transcriptomic and epigenomic modalities underpin human memory T cell subsets and their activation potential. Commun Biol 6, 363 (2023).\nLink to article\n\n\n\nIntegrated RNA & ATACseq analysis of memory T cells\nMemory T cells exhibited unique chromatin accessibility regions before and after secondary activation (PARs)\nPARs helped to distinguish distinct subtypes of memory T cells"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jim Rose’s Website",
+    "section": "",
+    "text": "Hello! I’m a PhD candidate at Emory University studying Genetics & Molecular biology. I work on autoimmunity and gene regulation of the immune system using the tools of computational biology.\nI’m also passionate about teaching coding to biologists, exploring new AI/ML technique applications for sequencing data, and untangling the messy network of gene regulation applied to human disease!\n\n\n\nI plan to use this site to host my contact/CV information, teaching materials for the introductory R coding and statistics class I help teach in the fall, as well as a place to highlight side projects I am working on.\n\n\n\nSee my resume"
   },
   {
     "objectID": "index.html#about-me",
@@ -343,6 +217,13 @@
     "text": "See my resume"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nMy specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume\n\n\n\n\nBlues/jazz guitar\nScience fiction\nCraft beer"
+  },
+  {
     "objectID": "about.html#more-about-me",
     "href": "about.html#more-about-me",
     "title": "About",
@@ -350,10 +231,178 @@
     "text": "I’m a computational biologist and a self-taught coder who works primarily in R on a daily basis (but also python when needed).\nMy specialties include transcriptomics, epigenomics, applying statistics, and network analysis. I am also beginning to explore the use of AI/ML natural language processing tools for large sequencing data sets.\n\n\n\nNext generation sequencing data analysis\n\nRNAseq, ATACseq, single-cell sequencing, whole-genome sequencing\n\nDesigning or maintaining bioinformatic pipelines\nData Visualization\n\nAll things ggplot…trying my hand at a little Javascript/Observable/D3 recently\n\nApplying biological know-how to design good questions for large complex data analysis\nGene regulatory network analysis\nEpigenetics\nAutoimmune disease and B cell tolerance mechanisms\n\n\n\n\nSee my resume\n\n\n\n\nBlues/jazz guitar\nScience fiction\nCraft beer"
   },
   {
-    "objectID": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
-    "href": "Teaching.html#ibs-519-statistical-rigor-reproducibility",
-    "title": "Teaching",
+    "objectID": "presentations/IntroDataViz.html#who-am-i",
+    "href": "presentations/IntroDataViz.html#who-am-i",
+    "title": "Intro to Data Viz",
+    "section": "Who am I?",
+    "text": "Who am I?\n\n\n\nOne of your TAs for this course\nPhD student (5th year, Genetics & Molecular Biology program)\nComputational immunology/gene regulation research\nSelf-taught coder (R & python)\n\n\nMy website (build one for yourself!): \n\n\n\nhttps://jrose835.quarto.pub/jimrose_quartosite/"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#main-qs-for-today",
+    "href": "presentations/IntroDataViz.html#main-qs-for-today",
+    "title": "Intro to Data Viz",
+    "section": "Main Q’s for Today:",
+    "text": "Main Q’s for Today:\n\n\nWhy look at (visualize) data?\n\n\n\n\nHow should I look at data?\n\n\n\n\nWhat the heck is ggplot2? And how do I use it?"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#visualizing-to-explore-data",
+    "href": "presentations/IntroDataViz.html#visualizing-to-explore-data",
+    "title": "Intro to Data Viz",
+    "section": "Visualizing to explore data",
+    "text": "Visualizing to explore data\nSometimes visualzing data can tell you more than summary statistics…"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
+    "href": "presentations/IntroDataViz.html#visualizing-to-convince-or-make-a-point",
+    "title": "Intro to Data Viz",
+    "section": "Visualizing to convince or make a point",
+    "text": "Visualizing to convince or make a point"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
+    "href": "presentations/IntroDataViz.html#when-data-visualization-goes-wrong",
+    "title": "Intro to Data Viz",
+    "section": "When data visualization goes wrong",
+    "text": "When data visualization goes wrong"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#how-should-i-visualize-data",
+    "href": "presentations/IntroDataViz.html#how-should-i-visualize-data",
+    "title": "Intro to Data Viz",
+    "section": "How should I visualize data?",
+    "text": "How should I visualize data?"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
+    "href": "presentations/IntroDataViz.html#pillar-1-show-the-data-honestly",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 1: Show the data (honestly)",
+    "text": "Pillar 1: Show the data (honestly)\n\n\n\n\n\n\n\nWeissgerber, T. L., Milic, N. M., Winham, S. J. & Garovic, V. D. Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm. PLOS Biology 13, e1002128 (2015)."
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
+    "href": "presentations/IntroDataViz.html#pillar-2-think-about-perception",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 2: Think about perception",
+    "text": "Pillar 2: Think about perception\n\n\n\nYou need to think about the WAY your audience’s BRAIN will PERCEIVE your chart\nPerceptual accuracy is influenced by the way you are conveying information.\n\n(i.e. type of chart used)\n\n\n\n\n\n\nSome charts enable more accuracy than others!"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
+    "href": "presentations/IntroDataViz.html#think-about-your-plot-in-terms-of-channels",
+    "title": "Intro to Data Viz",
+    "section": "Think about your plot in terms of “channels”",
+    "text": "Think about your plot in terms of “channels”"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
+    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 3: Reduce Clutter",
+    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\n\npoke &lt;- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(poke, aes(x=Attack, y=Defense)) + \n  geom_point() +\n  geom_text(aes(label=Name))"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
+    "href": "presentations/IntroDataViz.html#pillar-3-reduce-clutter-1",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 3: Reduce Clutter",
+    "text": "Pillar 3: Reduce Clutter\n\n\nCode\nlibrary(tidyverse)\nlibrary(ggrepel)\n\npoke &lt;- read_csv(\"./DataSets/pokemon.csv\")\n\nggplot(data=poke, aes(x=Attack, y=Defense)) + \n  geom_point(alpha=0.8, color='darkgrey') + geom_text_repel(aes(label=ifelse(Defense&gt;125 | Attack &gt;140, as.character(Name), \"\"))) + \n  geom_density2d()"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
+    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 4: Use color strategically",
+    "text": "Pillar 4: Use color strategically\nTo indicate groups or categories"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
+    "href": "presentations/IntroDataViz.html#pillar-4-use-color-strategically-1",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 4: Use color strategically",
+    "text": "Pillar 4: Use color strategically\nTo highlight"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
+    "href": "presentations/IntroDataViz.html#dont-make-rainbow-clown-vomit-charts",
+    "title": "Intro to Data Viz",
+    "section": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS",
+    "text": "DON’T MAKE RAINBOW CLOWN VOMIT CHARTS"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
+    "href": "presentations/IntroDataViz.html#consider-inclusivity-when-choosing-a-color-palette",
+    "title": "Intro to Data Viz",
+    "section": "Consider inclusivity when choosing a color palette",
+    "text": "Consider inclusivity when choosing a color palette\n\n\n\n\n\n\nOriginal\n\n\n\n\n\n\n\nDeuteranope\n\n\n\n\n\n\n\nTritanope"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#pillar-5-get-creative",
+    "href": "presentations/IntroDataViz.html#pillar-5-get-creative",
+    "title": "Intro to Data Viz",
+    "section": "Pillar 5: Get creative",
+    "text": "Pillar 5: Get creative\n\n\n\n\n \nW.E.B. Du Bois\nParis Exhibition 1900"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
+    "href": "presentations/IntroDataViz.html#consult-a-chart-library-or-atlas-for-ideas-on-chart-types",
+    "title": "Intro to Data Viz",
+    "section": "Consult a chart library or atlas for ideas on chart types",
+    "text": "Consult a chart library or atlas for ideas on chart types\n\nhttps://r-graph-gallery.com/"
+  },
+  {
+    "objectID": "presentations/IntroDataViz.html#other-great-resources",
+    "href": "presentations/IntroDataViz.html#other-great-resources",
+    "title": "Intro to Data Viz",
+    "section": "Other great resources",
+    "text": "Other great resources\n\n\n\n\n\n\nData Visualization with R by Rob Kabacoff, PhD\n\n\n\n\n\n\n\n\n\nBetter Data Visualizations by Jonathan Schwabish\n\n\n\n\n\n\n\n\n\nData Visualization: A Practical Introduction by Kieran Healy"
+  },
+  {
+    "objectID": "posts/JimR_Inspirit_Presentation.html#the-problem",
+    "href": "posts/JimR_Inspirit_Presentation.html#the-problem",
+    "title": "What if BlockBuster Had ML to Help Them Stock Their Shelves…?",
+    "section": "The Problem",
+    "text": "The Problem\n\n\nMovie Genre Classification\nCan we help create a fully automated blockbuster by classifying new movies into the correct genre section based only on their description?\nWe’ll use a data set of 54214 movies with their:\n\ngenre (label)\ndescriptions (input)\n\n\n\n\n\n\n\n\n\nAn NLP multi-class classification problem with MANY classes of unequal sizes"
+  },
+  {
+    "objectID": "posts/JimR_Inspirit_Presentation.html#custom-trained-word2vec-embeddings-performed-better-than-pretrained-models",
+    "href": "posts/JimR_Inspirit_Presentation.html#custom-trained-word2vec-embeddings-performed-better-than-pretrained-models",
+    "title": "What if BlockBuster Had ML to Help Them Stock Their Shelves…?",
+    "section": "Custom-trained Word2Vec embeddings performed better than pretrained models",
+    "text": "Custom-trained Word2Vec embeddings performed better than pretrained models\n\n\nEmbedding Models Used:\n\nGlove pre-trained “Wiki-gigaword 300” model (“glove”)\nSpacy pre-trained word2vec model (“SpCyw2v”)\nWord2Vec model trained on my movie description data (“myw2v”)\n\n\n\n\nBaseline Models: Logistic Regression\nValidation Accuracy"
+  },
+  {
+    "objectID": "posts/JimR_Inspirit_Presentation.html#overunder-fitting-depending-on-model-complexity",
+    "href": "posts/JimR_Inspirit_Presentation.html#overunder-fitting-depending-on-model-complexity",
+    "title": "What if BlockBuster Had ML to Help Them Stock Their Shelves…?",
+    "section": "Over/under fitting depending on model complexity",
+    "text": "Over/under fitting depending on model complexity\n\n\nAccuracy \n\nNext, I tried a series of models of increasing complexity\n\n\n\n\n\n\nNote\n\n\nSimpler, linear models underfit the data\nMore complex models overfit\nWithout further tweaking the simple models won out on validation set accuraacy for now"
+  },
+  {
+    "objectID": "posts/JimR_Inspirit_Presentation.html#shortening-embedding-vector-lengths-helped-some-models",
+    "href": "posts/JimR_Inspirit_Presentation.html#shortening-embedding-vector-lengths-helped-some-models",
+    "title": "What if BlockBuster Had ML to Help Them Stock Their Shelves…?",
+    "section": "Shortening embedding vector lengths helped some models",
+    "text": "Shortening embedding vector lengths helped some models\n\n\n\n\nI recreated the embeddings using vectors of length 100 instead of the original 300…which seem to help to increase validation accuracy for some models like RandomForest\nWhat I’d do next:\nPerhaps the overfitting can be overcome by full-scale hyperparameter tuning?"
+  },
+  {
+    "objectID": "posts/JimR_Inspirit_Presentation.html#thank-you",
+    "href": "posts/JimR_Inspirit_Presentation.html#thank-you",
+    "title": "What if BlockBuster Had ML to Help Them Stock Their Shelves…?",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nBig shout out to Anil for being a great small group instructor!"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "I’ve had the pleasure to help teach a course for several years now at Emory aimed at introducing new graduate students to R programming, statistics, and reproducibility concepts. Below are some of the materials I’ve created."
+    "text": "This page showcases side projects I’ve worked on."
+  },
+  {
+    "objectID": "projects.html#inspirit-nlp-project",
+    "href": "projects.html#inspirit-nlp-project",
+    "title": "Projects",
+    "section": "Inspirit NLP Project",
+    "text": "Inspirit NLP Project\nIn the summer of 2023 I took a short course on AI/ML methods through the Inspirit program. This presentation summed up a quick project I tackled introducing myself to the concept of embeddings, NLP, and multi-class prediction problems!"
   }
 ]
