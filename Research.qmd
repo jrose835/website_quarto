@@ -4,24 +4,6 @@ title: "Research"
 
 This page showcases the main research projects I've worked on during my PhD
 
-## Autoimmunity
-
-*Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome*
-
-*Manuscript in preparation*
-
-::: columns
-::: column
-- Multi-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients
-
-- Motivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?
-:::
-
-::: column
-![](./images/SLEsep_model.png)
-:::
-:::
-
 ## Epigenetic Memory in T cells
 
 *Rose, J.R., Akdogan-Ozdilek, B., Rahmberg, A.R. et al. Distinct transcriptomic and epigenomic modalities underpin human memory T cell subsets and their activation potential. Commun Biol 6, 363 (2023).*
@@ -37,5 +19,23 @@ This page showcases the main research projects I've worked on during my PhD
 
 ::: column
 ![](./images/model_figure_v2.png){fig-height="40%"}
+:::
+:::
+
+## Autoimmunity
+
+*Rose, J.R., Ishii Y., et al. Clinically inactive SLE resting naïve B cells retain distinct transcriptomes and durable alterations to the epigenome*
+
+*Manuscript in preparation*
+
+::: columns
+::: column
+-   Multi-omic study of B cells in Systemic Lupis Erythmatosis (SLE) patients
+
+-   Motivating question: Do changes in disease activity affect cellular and molecular phenotypes of B cells in SLE?
+:::
+
+::: column
+![](./images/SLEsep_model.png)
 :::
 :::
