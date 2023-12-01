@@ -1,0 +1,218 @@
+---
+title: "A practical guide to principal component analysis"
+author: "jrose"
+date: Nov 27 2023
+---
+
+*The following is a short primer I made for the IBS519 course at Emory in the Fall of 2023 to introduce first-year bioscience students to PCA for use in their research*
+
+## Part 1: PCA Background
+
+*I wanna be the very best...*
+
+At the beginning of this course we learned how simple data visualization can help to uncover broader structures within data by plotting relationships between individual variables (or features) one at a time.
+
+Now we are going to to VERY QUICKLY cover another technique that is commonly used to find structure in large, complex, multi-variable datasets:
+
+**Principal component analysis**
+
+### Load Data
+
+To do so let's bring back our friends....the Pokemon...and all of their stats to see if we can make any new conclusions about them using PCA.
+
+```{r message=FALSE}
+library(tidyverse)
+
+poke = read_csv("./DataSets/pokemon.csv")
+```
+
+*Principal component analysis* is a dimensional reduction technique that creates NEW variables (principal components) which:
+
+-   Are *not correlated* with each other
+
+-   Try to capture as much of the variance of the data as possible
+
+PCA is often useful when you have LOTS of variables, some of which may be correlated with each other, and where interpretation of each variable/feature individually would take too much time.
+
+### Prepare Data
+
+The following is required to successfully perform PCA:
+
+1)  Data must be numeric (no discrete or categorical data)
+
+2)  Each variable should be on the same scale and ideally centered at 0
+
+3)  Must not contain NA values
+
+Let's walk through preparing our data for each of these criteria:
+
+```{r}
+poke_num <- poke %>% select_if(is.numeric) %>% 
+  select(-Number) %>% #Num is just an index variable so we don't want to use it
+  mutate(Name=poke$Name)
+#^Select numeric values only
+
+poke_num <- drop_na(poke_num) %>%
+  column_to_rownames(var="Name")
+#^Remove NAs & set rownames to pokemon Name
+
+poke_num_scale <- apply(poke_num, 2, scale) %>% data.frame()
+#^Transform our data to scale and center
+
+rownames(poke_num_scale) <- rownames(poke_num)
+#^Fix rownames
+
+head(poke_num_scale)
+```
+
+```{r}
+summary(poke$HP)
+summary(poke$Attack)
+```
+
+```{r}
+summary(poke_num_scale$HP)
+summary(poke_num_scale$Attack)
+```
+
+*Notice how both variables (HP & Attack) now have a mean centered at 0 and relatively similar ranges/scales*
+
+### Perform PCA & Visualize
+
+Now our data is prepared for PCA. There are many different functions that have been created to help perform PCA in R, each with slightly different attributes. Try asking your favorite GPT model/chatbot to list out all of them sometime.
+
+Today, we will use the `princomp()` function to do the actual PCA
+
+```{r}
+pca <- princomp(poke_num_scale)
+```
+
+The results of the PCA are now stored in the object named `pca`. Let's take a look at what's inside it.
+
+```{r}
+summary(pca)
+```
+
+We can also visualize the results. Let's use a few functions from the "factoextra" package which are designed specifically for visualzing the results of the princomp function.
+
+```{r message=FALSE}
+library(factoextra)
+library(patchwork)
+
+p1 <- fviz_pca_ind(pca)
+p2 <- fviz_eig(pca)
+p3 <- fviz_pca_var(pca)
+
+#fviz_pca_ind(pca, axes=c(2,3))
+#fviz_pca_var(pca, axes=c(2,3))
+```
+
+The **individual scatter plot** shows a scatter plot of the first two PCs for each row in our data (in this case each Pokemon)
+
+```{r}
+p1
+```
+
+The **scree/eigenvector plot** shows the percentage of total variance explained by each PC
+
+```{r}
+p1 + p2
+```
+
+The **variable plot** shows the "loadings" for each variable in the dataset. The direction of each vector indicates the direction of the variable's maximum variance, and the length of the vector indicates the strength of the variable's contribution to the components being plotted.
+
+The angle between any two vectors approximates the correlation between the corresponding variables. A small angle implies a strong positive correlation, an angle around 90 degrees implies little or no correlation, and an angle greater than 90 degrees implies a negative correlation.
+
+```{r}
+p3
+p1 + p3
+```
+
+### How do the PC results relate to our original data?
+
+To answer this we need to combine our new variables (PCs) with our old data (without the scaling).
+
+A little wrangling to do that:
+
+```{r}
+pca_scores <- pca$scores %>%
+  data.frame() %>%
+  rownames_to_column(var="Name")
+
+
+pca_plot <- left_join(pca_scores, poke, by="Name")
+```
+
+And now we can use ggplot to visualize the scatter plot from before, along with the original categorical or numeric data
+
+```{r}
+ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Catch_Rate)) + scale_color_viridis_c() + theme_minimal()
+```
+
+```{r}
+#| code-fold: true
+g1 <- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Defense)) + scale_color_viridis_c() + theme_minimal()
+g2 <- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Speed)) + scale_color_viridis_c() + theme_minimal()
+g3 <- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Weight_kg)) + scale_color_viridis_c() + theme_minimal()
+
+g1 + g2 + g3 + plot_layout(nrow = 2, byrow = FALSE)
+```
+
+What have we learned about our data from this? **Any big observations/conclusions?**
+
+## Part 2: How PCA can help with modeling
+
+*Can we catch 'em all?*
+
+The PC variables we create can also be used when creating statistical models...with a few inherent benefits.
+
+Let's explore this by trying to **predict the catch rate variable** using other attributes about our pokemon.
+
+### Using a traditional variables
+
+```{r}
+reg_model <- glm(Catch_Rate ~ Attack + Defense + Speed + Weight_kg + Height_m + HP + `Special Atk` + `Special Def`, data=pca_plot)
+summary(reg_model)
+```
+
+| Keep a note of the AIC value here. AIC stands for Akaike Information Criterion which is a measure used in statistics to assess how well a statistical model fits the data.
+| When comparing models **LOWER AIC values** are thought to indicate that a model is a relatively **better fit** for the data.
+
+### Using PCs
+
+Now let's try to do the same using our PCs
+
+```{r}
+PCA_model <- glm(Catch_Rate ~ Comp.1 + Comp.2 + Comp.3 + Comp.4,  data=pca_plot)
+summary(PCA_model)
+```
+
+*How do the two models compare ?*
+
+*Which one would you use?*
+
+### Potential benefits of using PCA in modeling:
+
+-   Reducing dimensions of the data makes for a simpler model (less features) which is less likely to overfit data
+
+-   PCA can be helpful in reducing noise since it retains the most significant principal components and discards the rest
+
+-   PCA transforms correlated variables into a set of linearly uncorrelated components, which helps to mitigate the issues that arise from *multicollinearity*.
+
+## Take aways
+
+-   PCA requires clean & numeric data set on roughly the same scale
+
+-   The `princomp()` function can be used to perfrom PCA in R. The factoextra package has some good visualization tools designed specifically to work with this function.
+
+-   Reducing the complexity of models using PCA can help to improve prediction ability
+
+## Resources to learn more
+
+This was a very quick, practical guide to using PCA. In the same way that driving a car doesn't require knowing how internal combustion engines work, you can use PCA without understanding the underlying mechanics. **HOWEVER** if you do so you better have a mechanic (aka statistician) on hand in case anything breaks down.
+
+If you want to deepen your knowledge and learn more about how PCA works (including the math behind it) check out the following:
+
+-   <https://bradleyboehmke.github.io/HOML/pca.html>
+
+-   <https://www.youtube.com/watch?v=FgakZw6K1QQ>

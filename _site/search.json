@@ -276,120 +276,120 @@
     "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
     "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2",
     "title": "ggplot2, an introduction",
-    "section": "The Layered Grammar of Graphics of ggplot2",
-    "text": "The Layered Grammar of Graphics of ggplot2\n\nOne reason that ggplot2 is so popular is that it uses a consistent framework, or “grammar”, which makes it both intuitive AND flexible\nElements of any chart (i.e. axis, points, bars, text etc) are “layered” on top of each other to form the complete graphic\n\n\n\n\n\n\n\n\n\n\nThe layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham@fosstodon.org) the creator of ggplot2"
+    "section": "",
+    "text": "One reason that ggplot2 is so popular is that it uses a consistent framework, or “grammar”, which makes it both intuitive AND flexible\nElements of any chart (i.e. axis, points, bars, text etc) are “layered” on top of each other to form the complete graphic\n\n\n\n\n\n\n\n\n\n\nThe layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham@fosstodon.org) the creator of ggplot2"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
     "href": "presentations/ggplot2Intro.html#the-layered-grammar-of-graphics-of-ggplot2-1",
     "title": "ggplot2, an introduction",
-    "section": "The Layered Grammar of Graphics of ggplot2",
-    "text": "The Layered Grammar of Graphics of ggplot2\n\n\n\n\n“Good grammar is just the first step in creating a good sentence”\n\n\n\nWickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3–28 (2010)."
+    "section": "",
+    "text": "“Good grammar is just the first step in creating a good sentence”\n\n\n\nWickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3–28 (2010)."
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
+    "section": "",
+    "text": "library(ggplot2)\ndata=data.frame(A=c(2,1,4,9),B=c(3,2,5,10), C=c(4,1,15,80),D=c(\"a\",\"a\",\"b\",\"b\"))\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-1",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nData is always defined in the first layer and is inherited in all subsequent layers"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-2",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() #Layer 2\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nLayers are added together using the “+” operator\n\n\n\n\n\n\n\n\n\nImportant\n\n\nOrder matters!"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() #Layer 2\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nLayers are added together using the “+” operator\n\n\n\n\n\n\n\n\nImportant\n\n\n\nOrder matters!"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-3",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() #Layer 3\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\ngeom_() functions are used in secondary layers to define the geometric objects used in the plot\nYou can add as many geoms to the plot as you like\n\n\n\n\n\n\n\n\n\nImportant\n\n\nBut keep in mind the data viz pillars!"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() #Layer 3\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\ngeom_() functions are used in secondary layers to define the geometric objects used in the plot\nYou can add as many geoms to the plot as you like\n\n\n\n\n\n\n\n\nImportant\n\n\n\nBut keep in mind the data viz pillars!"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-4",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) #Layer 5\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThese functions are added to make changes to the default coordinate system or axis scales\nThey start with the prefixes coord_ or scale_x, scale_y respectively"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) #Layer 5\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThese functions are added to make changes to the default coordinate system or axis scales\nThey start with the prefixes coord_ or scale_x, scale_y respectively"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
     "href": "presentations/ggplot2Intro.html#anatomy-of-a-ggplot-5",
     "title": "ggplot2, an introduction",
-    "section": "Anatomy of a ggplot",
-    "text": "Anatomy of a ggplot\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) +#Layer 5\n  theme_classic() #Layer 6\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFinally, theme() functions can be added to alter the default appearance of the plot\ne.g. title, axis titles, font size, background color, etc"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) +#Layer 5\n  theme_classic() #Layer 6\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nFinally, theme() functions can be added to alter the default appearance of the plot\ne.g. title, axis titles, font size, background color, etc"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
     "href": "presentations/ggplot2Intro.html#setting-properties-in-geoms",
     "title": "ggplot2, an introduction",
-    "section": "Setting properties in geoms",
-    "text": "Setting properties in geoms\nYou can change attributes of a layer by specifying them as arguments within the geom() function\n\n\n\n\n\nShape codes in R\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\n  geom_point(color=\"red\", shape=12, size=8)"
+    "section": "",
+    "text": "You can change attributes of a layer by specifying them as arguments within the geom() function\n\n\n\n\n\nShape codes in R\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\n  geom_point(color=\"red\", shape=12, size=8)"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
     "href": "presentations/ggplot2Intro.html#mapping-variables-to-aesthetics-using-aes",
     "title": "ggplot2, an introduction",
-    "section": "Mapping variables to aesthetics using aes()",
-    "text": "Mapping variables to aesthetics using aes()\nThe aes() function is used to assign variables in your data to graphical parameters (or channels)\n\n\n\nPosition (x,y)\nColor (fill, color)\nShape(shape, linetype)\nSize (size)\nTransparency (alpha)\nGroupings (group)\n\n\n\n\n\n\n\n\nImportant\n\n\nSyntax note: Variable names do NOT use quotes when used inside aes()"
+    "section": "",
+    "text": "The aes() function is used to assign variables in your data to graphical parameters (or channels)\n\n\n\nPosition (x,y)\nColor (fill, color)\nShape(shape, linetype)\nSize (size)\nTransparency (alpha)\nGroupings (group)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nSyntax note: Variable names do NOT use quotes when used inside aes()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#setting-vs-mapping",
     "href": "presentations/ggplot2Intro.html#setting-vs-mapping",
     "title": "ggplot2, an introduction",
-    "section": "Setting vs Mapping",
-    "text": "Setting vs Mapping\n\n\nSetting static attribute\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(color=\"red\", size=8)\n\n\n\n\n\nMapping to data\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D, size=C))\n\n\n\n\n\n\n\n\n[1] \"data\"\n\n\n  A  B  C D\n1 2  3  4 a\n2 1  2  1 a\n3 4  5 15 b\n4 9 10 80 b"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(color=\"red\", size=8)\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D, size=C))\n\n\n\n\n\n\n\n\nprint(\"data\")\n\n[1] \"data\"\n\ndata\n\n  A  B  C D\n1 2  3  4 a\n2 1  2  1 a\n3 4  5 15 b\n4 9 10 80 b"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
     "href": "presentations/ggplot2Intro.html#globally-vs-locally-mapping-variables",
     "title": "ggplot2, an introduction",
-    "section": "Globally vs locally mapping variables",
-    "text": "Globally vs locally mapping variables\n\n\nLocal Mapping\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\n\n\n\n\nGlobal Mapping\n\nggplot(data=data, aes(x=C, y=A, color=D)) +\ngeom_point() +\ngeom_line()\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAesthetics set within the original layer will be applied to all later layers/geoms"
+    "section": "",
+    "text": "ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A, color=D)) +\ngeom_point() +\ngeom_line()\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAesthetics set within the original layer will be applied to all later layers/geoms"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#saving-ggplots",
     "href": "presentations/ggplot2Intro.html#saving-ggplots",
     "title": "ggplot2, an introduction",
-    "section": "Saving ggplots",
-    "text": "Saving ggplots\nggplots can be stored as objects in R\n\nplot &lt;- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
+    "section": "",
+    "text": "ggplots can be stored as objects in R\n\nplot &lt;- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\n\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#basic-geoms",
     "href": "presentations/ggplot2Intro.html#basic-geoms",
     "title": "ggplot2, an introduction",
-    "section": "Basic geoms",
-    "text": "Basic geoms\n\n\nPoints\n\ngeom_point()\ngeom_jitter()\n\nDistributions\n\ngeom_histogram()\ngeom_density()\ngeom_boxplot()\ngeom_violin()\n\nStatistics\n\ngeom_smooth()\n\n\nBarplots\n\ngeom_bar()\ngeom_col()\n\nLines\n\ngeom_abline()\ngeom_hline()\ngeom_vline()\n\nText\n\ngeom_text()\ngeom_label()"
+    "section": "",
+    "text": "geom_point()\ngeom_jitter()\n\n\n\n\n\ngeom_histogram()\ngeom_density()\ngeom_boxplot()\ngeom_violin()\n\n\n\n\n\ngeom_smooth()\n\n\n\n\n\n\ngeom_bar()\ngeom_col()\n\n\n\n\n\ngeom_abline()\ngeom_hline()\ngeom_vline()\n\n\n\n\n\ngeom_text()\ngeom_label()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
     "href": "presentations/ggplot2Intro.html#scale-and-coordinate-modifiers",
     "title": "ggplot2, an introduction",
-    "section": "Scale and Coordinate Modifiers",
-    "text": "Scale and Coordinate Modifiers\n\n\nTitles\nModifies text labels on plot,axis, etc\n\nlabs()\nxlab()\nylab()\n\nScales\nChange aspects of axis/channel scales\n\nscale_x_continuous()\n\n_discrete()\n_manual()\n\nscale_color_continuous()\n\n_discrete()\n_manual()\n\nscale_fill_continuous()\n\n_discrete()\n_manual()\n\n\n\nCoordinate Systems\n\ncoord_cartesian()\ncoord_flip()\ncoord_polar()\n\nFaceting\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\nFaceting on the dose variable"
+    "section": "",
+    "text": "Modifies text labels on plot,axis, etc\n\nlabs()\nxlab()\nylab()\n\n\n\n\nChange aspects of axis/channel scales\n\nscale_x_continuous()\n\n_discrete()\n_manual()\n\nscale_color_continuous()\n\n_discrete()\n_manual()\n\nscale_fill_continuous()\n\n_discrete()\n_manual()\n\n\n\n\n\n\n\ncoord_cartesian()\ncoord_flip()\ncoord_polar()\n\n\n\n\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\nFaceting on the dose variable"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#themes",
     "href": "presentations/ggplot2Intro.html#themes",
     "title": "ggplot2, an introduction",
-    "section": "Themes",
-    "text": "Themes\n\n\nPre-built themes\nAdd these to ggplots as quick theme changes\n\ntheme_grey() default theme in ggplot\ntheme_bw()\ntheme_light()\ntheme_dark()\ntheme_minimal()\ntheme_classic()\ntheme_void()"
+    "section": "",
+    "text": "Add these to ggplots as quick theme changes\n\ntheme_grey() default theme in ggplot\ntheme_bw()\ntheme_light()\ntheme_dark()\ntheme_minimal()\ntheme_classic()\ntheme_void()"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#themes-1",
     "href": "presentations/ggplot2Intro.html#themes-1",
     "title": "ggplot2, an introduction",
-    "section": "Themes",
-    "text": "Themes\n\n\nTheme function\nExtremely customizable\n\ntheme()\n\ne.g.\nggplot() + theme(axis.text=element_text(size=10))"
+    "section": "",
+    "text": "Extremely customizable\n\ntheme()\n\ne.g.\nggplot() + theme(axis.text=element_text(size=10))"
   },
   {
     "objectID": "presentations/ggplot2Intro.html#remember-the-pillars",
@@ -402,8 +402,8 @@
     "objectID": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
     "href": "presentations/ggplot2Intro.html#googling-chatgpt-are-your-friends",
     "title": "ggplot2, an introduction",
-    "section": "Googling (& chatGPT!) are your friends",
-    "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
+    "section": "",
+    "text": "https://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html",
@@ -416,8 +416,8 @@
     "objectID": "presentations/looping_TAsession_02Nov23.html#outline",
     "href": "presentations/looping_TAsession_02Nov23.html#outline",
     "title": "Tales from the Loop",
-    "section": "Outline",
-    "text": "Outline\n\nWhat is a programming loop?\nFor loop\n\nThe “counter index” variable\n\nNested loops\nCoding loops vs functions\n\nFunctions inside a loop\nLooping vs vectorization\n\nSome advice on when to use loops"
+    "section": "",
+    "text": "What is a programming loop?\nFor loop\n\nThe “counter index” variable\n\nNested loops\nCoding loops vs functions\n\nFunctions inside a loop\nLooping vs vectorization\n\nSome advice on when to use loops"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#what-is-a-programming-loop",
@@ -445,7 +445,7 @@
     "href": "presentations/looping_TAsession_02Nov23.html#section",
     "title": "Tales from the Loop",
     "section": "",
-    "text": "Let’s say you wanted to find the mean and standard deviation of each row in this matrix\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✓ ggplot2 3.3.5     ✓ purrr   0.3.4\n✓ tibble  3.1.8     ✓ dplyr   1.0.8\n✓ tidyr   1.2.0     ✓ stringr 1.4.0\n✓ readr   1.4.0     ✓ forcats 0.5.1\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\nx dplyr::filter() masks stats::filter()\nx dplyr::lag()    masks stats::lag()\n\n\n\n\nCode\nmymatrix &lt;- matrix(rnorm(15, mean=10, sd=3),\n                   nrow=3, ncol=5\n                   )\nmymatrix\n\n\n         [,1]      [,2]     [,3]      [,4]      [,5]\n[1,] 10.03294 13.544074 9.762447  6.087668  7.443436\n[2,] 13.89763  9.955365 7.645999 11.368556  6.531978\n[3,] 11.35554  5.132111 7.121947  8.108390 12.261478\n\n\n\n\nWe can use a loop to “iterate” through each row"
+    "text": "Let’s say you wanted to find the mean and standard deviation of each row in this matrix\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✓ ggplot2 3.3.5     ✓ purrr   0.3.4\n✓ tibble  3.1.8     ✓ dplyr   1.0.8\n✓ tidyr   1.2.0     ✓ stringr 1.4.0\n✓ readr   1.4.0     ✓ forcats 0.5.1\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\nx dplyr::filter() masks stats::filter()\nx dplyr::lag()    masks stats::lag()\n\n\n\n\nCode\nmymatrix &lt;- matrix(rnorm(15, mean=10, sd=3),\n                   nrow=3, ncol=5\n                   )\nmymatrix\n\n\n          [,1]      [,2]      [,3]      [,4]      [,5]\n[1,]  7.642104  7.246876 14.936827  9.519524  7.449645\n[2,] 15.601415  6.360898 10.166991 10.856952  7.981951\n[3,]  7.713354 12.066763  7.991026 15.049491 10.349884\n\n\n\n\nWe can use a loop to “iterate” through each row"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#the-for-loop",
@@ -480,14 +480,14 @@
     "href": "presentations/looping_TAsession_02Nov23.html#then-loop-for-through-each-row-1",
     "title": "Tales from the Loop",
     "section": "Then loop for through each row",
-    "text": "Then loop for through each row\n\nrow_stats &lt;- data.frame(means=rep(NA, nrow(mymatrix)),\n                       stdev=rep(NA, nrow(mymatrix)))\n\nfor (i in 1:nrow(mymatrix)){\n  row_stats$means[i] &lt;- mean(mymatrix[i,])\n  row_stats$stdev[i] &lt;- sd(mymatrix[i,])\n}\nrow_stats\n\n     means    stdev\n1 9.374114 2.850512\n2 9.879905 2.939507\n3 8.795893 2.969012"
+    "text": "Then loop for through each row\n\nrow_stats &lt;- data.frame(means=rep(NA, nrow(mymatrix)),\n                       stdev=rep(NA, nrow(mymatrix)))\n\nfor (i in 1:nrow(mymatrix)){\n  row_stats$means[i] &lt;- mean(mymatrix[i,])\n  row_stats$stdev[i] &lt;- sd(mymatrix[i,])\n}\nrow_stats\n\n      means    stdev\n1  9.358995 3.247782\n2 10.193641 3.509494\n3 10.634103 3.047358"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#another-way-to-write-a-for-loop",
     "href": "presentations/looping_TAsession_02Nov23.html#another-way-to-write-a-for-loop",
     "title": "Tales from the Loop",
     "section": "Another way to write a for loop",
-    "text": "Another way to write a for loop\n\nThe counter variable can be named anything you like\nR will iterate through whatever you declare after the in operator and assign it to the counter variable\n\n\ndragons &lt;- c(\"Vhagar\",\"Caraxes\",\"Syrax\",\"Meleys\")\n\nfor (dragon in dragons){\n  print(paste(dragon, \"the fearsome\", sep=\" \"))\n}\n\n\n\n[1] \"Vhagar the fearsome\"\n[1] \"Caraxes the fearsome\"\n[1] \"Syrax the fearsome\"\n[1] \"Meleys the fearsome\""
+    "text": "Another way to write a for loop\n\nThe counter variable can be named anything you like\nR will iterate through whatever you declare after the in operator and assign it to the counter variable\n\n\ndragons &lt;- c(\"Vhagar\",\"Caraxes\",\"Syrax\",\"Meleys\")\n\nfor (dragon in dragons){\n  print(paste(dragon, \"the fearsome\", sep=\" \"))\n}\n\n[1] \"Vhagar the fearsome\"\n[1] \"Caraxes the fearsome\"\n[1] \"Syrax the fearsome\"\n[1] \"Meleys the fearsome\""
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize",
@@ -501,7 +501,7 @@
     "href": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize-1",
     "title": "Tales from the Loop",
     "section": "Looping to Z-score Normalize",
-    "text": "Looping to Z-score Normalize\nNow let’s use these same calculations to create a z-scored version of the orignal matrix\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nfor (i in 1:nrow(mymatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(mymatrix[i,])\n  sd &lt;- sd(mymatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(mymatrix)){\n    zscored[i,j] &lt;- (mymatrix[i,j] - mean)/sd\n  }\n}\nzscored\n\n\n          [,1]        [,2]       [,3]       [,4]      [,5]\n[1,] 0.2311268  1.46288119  0.1362330 -1.1529319 -0.677309\n[2,] 1.3668009  0.02567116 -0.7599592  0.5064288 -1.138942\n[3,] 0.8621204 -1.23400736 -0.5638057 -0.2315595  1.167252"
+    "text": "Looping to Z-score Normalize\nNow let’s use these same calculations to create a z-scored version of the orignal matrix\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nfor (i in 1:nrow(mymatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(mymatrix[i,])\n  sd &lt;- sd(mymatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(mymatrix)){\n    zscored[i,j] &lt;- (mymatrix[i,j] - mean)/sd\n  }\n}\nzscored\n\n\n          [,1]       [,2]         [,3]       [,4]        [,5]\n[1,] -0.528635 -0.6503264  1.717427916 0.04942712 -0.58789360\n[2,]  1.540898 -1.0921070 -0.007593907 0.18900470 -0.63020199\n[3,] -0.958453  0.4701315 -0.867333809 1.44892286 -0.09326751"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions",
@@ -515,20 +515,62 @@
     "href": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions-1",
     "title": "Tales from the Loop",
     "section": "Coding with loops and custom functions",
-    "text": "Coding with loops and custom functions\nLoops can be combined with custom functions to improve simplicity and readability of your code\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nmy_zscore_fn &lt;- function(x){\n  #Input: x, a vector of numeric class\n  #Output: z-scored vector\n  mean = mean(x)\n  sd = sd(x)\n  output = (x - mean)/sd\n  return(output)\n}\n\nfor (i in 1:nrow(mymatrix)){\n  input &lt;- mymatrix[i,]\n  zscored[i,] &lt;- my_zscore_fn(input)\n}\nzscored\n\n\n          [,1]        [,2]       [,3]       [,4]      [,5]\n[1,] 0.2311268  1.46288119  0.1362330 -1.1529319 -0.677309\n[2,] 1.3668009  0.02567116 -0.7599592  0.5064288 -1.138942\n[3,] 0.8621204 -1.23400736 -0.5638057 -0.2315595  1.167252"
+    "text": "Coding with loops and custom functions\nLoops can be combined with custom functions to improve simplicity and readability of your code\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nmy_zscore_fn &lt;- function(x){\n  #Input: x, a vector of numeric class\n  #Output: z-scored vector\n  mean = mean(x)\n  sd = sd(x)\n  output = (x - mean)/sd\n  return(output)\n}\n\nfor (i in 1:nrow(mymatrix)){\n  input &lt;- mymatrix[i,]\n  zscored[i,] &lt;- my_zscore_fn(input)\n}\nzscored\n\n\n          [,1]       [,2]         [,3]       [,4]        [,5]\n[1,] -0.528635 -0.6503264  1.717427916 0.04942712 -0.58789360\n[2,]  1.540898 -1.0921070 -0.007593907 0.18900470 -0.63020199\n[3,] -0.958453  0.4701315 -0.867333809 1.44892286 -0.09326751"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops",
     "href": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops",
     "title": "Tales from the Loop",
     "section": "Some advice on when to use loops",
-    "text": "Some advice on when to use loops\nFunctions are nearly always faster than loops\n\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(myBIGmatrix[i,])\n  sd &lt;- sd(myBIGmatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(myBIGmatrix)){\n    BIGzscored[i,j] &lt;- (myBIGmatrix[i,j] - mean)/sd\n  }\n}\ntoc()\n\n\n0.044 sec elapsed"
+    "text": "Some advice on when to use loops\nFunctions are nearly always faster than loops\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(myBIGmatrix[i,])\n  sd &lt;- sd(myBIGmatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(myBIGmatrix)){\n    BIGzscored[i,j] &lt;- (myBIGmatrix[i,j] - mean)/sd\n  }\n}\ntoc()\n\n0.04 sec elapsed"
   },
   {
     "objectID": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops-1",
     "href": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops-1",
     "title": "Tales from the Loop",
     "section": "Some advice on when to use loops",
-    "text": "Some advice on when to use loops\nVectorized functions save compute time with large datasets, but the difference is minimal if you are not dealing with a lot of data points.\n\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  input &lt;- myBIGmatrix[i,]\n  BIGzscored[i,] &lt;- my_zscore_fn(input)\n}\ntoc()\n\n\n0.014 sec elapsed"
+    "text": "Some advice on when to use loops\nVectorized functions save compute time with large datasets, but the difference is minimal if you are not dealing with a lot of data points.\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  input &lt;- myBIGmatrix[i,]\n  BIGzscored[i,] &lt;- my_zscore_fn(input)\n}\ntoc()\n\n0.014 sec elapsed"
+  },
+  {
+    "objectID": "presentations/pca.html",
+    "href": "presentations/pca.html",
+    "title": "A practical guide to principal component analysis",
+    "section": "",
+    "text": "The following is a short primer I made for the IBS519 course at Emory in the Fall of 2023 to introduce first-year bioscience students to PCA for use in their research"
+  },
+  {
+    "objectID": "presentations/pca.html#part-1-pca-background",
+    "href": "presentations/pca.html#part-1-pca-background",
+    "title": "A practical guide to principal component analysis",
+    "section": "Part 1: PCA Background",
+    "text": "Part 1: PCA Background\nI wanna be the very best…\nAt the beginning of this course we learned how simple data visualization can help to uncover broader structures within data by plotting relationships between individual variables (or features) one at a time.\nNow we are going to to VERY QUICKLY cover another technique that is commonly used to find structure in large, complex, multi-variable datasets:\nPrincipal component analysis\n\nLoad Data\nTo do so let’s bring back our friends….the Pokemon…and all of their stats to see if we can make any new conclusions about them using PCA.\n\nlibrary(tidyverse)\n\npoke = read_csv(\"./DataSets/pokemon.csv\")\n\nPrincipal component analysis is a dimensional reduction technique that creates NEW variables (principal components) which:\n\nAre not correlated with each other\nTry to capture as much of the variance of the data as possible\n\nPCA is often useful when you have LOTS of variables, some of which may be correlated with each other, and where interpretation of each variable/feature individually would take too much time.\n\n\nPrepare Data\nThe following is required to successfully perform PCA:\n\nData must be numeric (no discrete or categorical data)\nEach variable should be on the same scale and ideally centered at 0\nMust not contain NA values\n\nLet’s walk through preparing our data for each of these criteria:\n\npoke_num &lt;- poke %&gt;% select_if(is.numeric) %&gt;% \n  select(-Number) %&gt;% #Num is just an index variable so we don't want to use it\n  mutate(Name=poke$Name)\n#^Select numeric values only\n\npoke_num &lt;- drop_na(poke_num) %&gt;%\n  column_to_rownames(var=\"Name\")\n#^Remove NAs & set rownames to pokemon Name\n\npoke_num_scale &lt;- apply(poke_num, 2, scale) %&gt;% data.frame()\n#^Transform our data to scale and center\n\nrownames(poke_num_scale) &lt;- rownames(poke_num)\n#^Fix rownames\n\nhead(poke_num_scale)\n\n                 Total         HP     Attack    Defense Special.Atk Special.Def\nBulbasaur  -0.86464383 -0.8650069 -0.8562420 -0.6765372 -0.01480364 -0.04587956\nIvysaur     0.01702662 -0.2751045 -0.3932530 -0.1801456  0.55493009  0.55628964\nVenusaur    1.23312378  0.5114319  0.3190376  0.5289851  1.31457507  1.35918191\nCharmander -0.95585111 -1.1009678 -0.7493984 -0.8892764 -0.20471488 -0.64804876\nCharmeleon  0.01702662 -0.3537582 -0.3220240 -0.3574283  0.55493009 -0.04587956\nCharizard   1.32433107  0.4327782  0.3902667  0.3517024  1.65641531  0.75701271\n                 Speed Generation  Pr_Male    Height_m  Weight_kg Catch_Rate\nBulbasaur  -0.70370909  -1.371074 1.608363 -0.38910342 -0.6078938 -0.8343086\nIvysaur    -0.13830696  -1.371074 1.608363 -0.08879898 -0.5121877 -0.8343086\nVenusaur    0.61556254  -1.371074 1.608363  1.00516717  0.8528015 -0.8343086\nCharmander  0.05016042  -1.371074 1.608363 -0.49635500 -0.5827905 -0.8343086\nCharmeleon  0.61556254  -1.371074 1.608363  0.01845260 -0.4180505 -0.8343086\nCharizard   1.36943205  -1.371074 1.608363  0.67268726  0.7037510 -0.8343086\n\n\n\nsummary(poke$HP)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   1.00   50.00   65.00   68.38   80.00  255.00 \n\nsummary(poke$Attack)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   5.00   53.00   74.00   75.01   95.00  165.00 \n\n\n\nsummary(poke_num_scale$HP)\n\n    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. \n-2.24145 -0.66837 -0.07847  0.00000  0.44261  7.39363 \n\nsummary(poke_num_scale$Attack)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n-2.4233 -0.7494 -0.1083  0.0000  0.6040  3.2750 \n\n\nNotice how both variables (HP & Attack) now have a mean centered at 0 and relatively similar ranges/scales\n\n\nPerform PCA & Visualize\nNow our data is prepared for PCA. There are many different functions that have been created to help perform PCA in R, each with slightly different attributes. Try asking your favorite GPT model/chatbot to list out all of them sometime.\nToday, we will use the princomp() function to do the actual PCA\n\npca &lt;- princomp(poke_num_scale)\n\nThe results of the PCA are now stored in the object named pca. Let’s take a look at what’s inside it.\n\nsummary(pca)\n\nImportance of components:\n                          Comp.1    Comp.2     Comp.3     Comp.4     Comp.5\nStandard deviation     2.1400310 1.2039366 1.06052524 1.02873685 0.96975628\nProportion of Variance 0.3822379 0.1209765 0.09387191 0.08832878 0.07849082\nCumulative Proportion  0.3822379 0.5032144 0.59708631 0.68541509 0.76390591\n                           Comp.6     Comp.7     Comp.8    Comp.9    Comp.10\nStandard deviation     0.85705152 0.81755855 0.68900108 0.6161671 0.55440766\nProportion of Variance 0.06130664 0.05578679 0.03962173 0.0316877 0.02565382\nCumulative Proportion  0.82521255 0.88099934 0.92062107 0.9523088 0.97796259\n                          Comp.11 Comp.12\nStandard deviation     0.51384660       0\nProportion of Variance 0.02203741       0\nCumulative Proportion  1.00000000       1\n\n\nWe can also visualize the results. Let’s use a few functions from the “factoextra” package which are designed specifically for visualzing the results of the princomp function.\n\nlibrary(factoextra)\nlibrary(patchwork)\n\np1 &lt;- fviz_pca_ind(pca)\np2 &lt;- fviz_eig(pca)\np3 &lt;- fviz_pca_var(pca)\n\n#fviz_pca_ind(pca, axes=c(2,3))\n#fviz_pca_var(pca, axes=c(2,3))\n\nThe individual scatter plot shows a scatter plot of the first two PCs for each row in our data (in this case each Pokemon)\n\np1\n\n\n\n\nThe scree/eigenvector plot shows the percentage of total variance explained by each PC\n\np1 + p2\n\n\n\n\nThe variable plot shows the “loadings” for each variable in the dataset. The direction of each vector indicates the direction of the variable’s maximum variance, and the length of the vector indicates the strength of the variable’s contribution to the components being plotted.\nThe angle between any two vectors approximates the correlation between the corresponding variables. A small angle implies a strong positive correlation, an angle around 90 degrees implies little or no correlation, and an angle greater than 90 degrees implies a negative correlation.\n\np3\n\n\n\np1 + p3\n\n\n\n\n\n\nHow do the PC results relate to our original data?\nTo answer this we need to combine our new variables (PCs) with our old data (without the scaling).\nA little wrangling to do that:\n\npca_scores &lt;- pca$scores %&gt;%\n  data.frame() %&gt;%\n  rownames_to_column(var=\"Name\")\n\n\npca_plot &lt;- left_join(pca_scores, poke, by=\"Name\")\n\nAnd now we can use ggplot to visualize the scatter plot from before, along with the original categorical or numeric data\n\nggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Catch_Rate)) + scale_color_viridis_c() + theme_minimal()\n\n\n\n\n\n\nCode\ng1 &lt;- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Defense)) + scale_color_viridis_c() + theme_minimal()\ng2 &lt;- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Speed)) + scale_color_viridis_c() + theme_minimal()\ng3 &lt;- ggplot(pca_plot, aes(x=Comp.1, y=Comp.2)) + geom_point(aes(color=Weight_kg)) + scale_color_viridis_c() + theme_minimal()\n\ng1 + g2 + g3 + plot_layout(nrow = 2, byrow = FALSE)\n\n\n\n\n\nWhat have we learned about our data from this? Any big observations/conclusions?"
+  },
+  {
+    "objectID": "presentations/pca.html#part-2-how-pca-can-help-with-modeling",
+    "href": "presentations/pca.html#part-2-how-pca-can-help-with-modeling",
+    "title": "A practical guide to principal component analysis",
+    "section": "Part 2: How PCA can help with modeling",
+    "text": "Part 2: How PCA can help with modeling\nCan we catch ’em all?\nThe PC variables we create can also be used when creating statistical models…with a few inherent benefits.\nLet’s explore this by trying to predict the catch rate variable using other attributes about our pokemon.\n\nUsing a traditional variables\n\nreg_model &lt;- glm(Catch_Rate ~ Attack + Defense + Speed + Weight_kg + Height_m + HP + `Special Atk` + `Special Def`, data=pca_plot)\nsummary(reg_model)\n\n\nCall:\nglm(formula = Catch_Rate ~ Attack + Defense + Speed + Weight_kg + \n    Height_m + HP + `Special Atk` + `Special Def`, data = pca_plot)\n\nDeviance Residuals: \n     Min        1Q    Median        3Q       Max  \n-146.674   -24.799     0.986    29.198   181.870  \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   327.68172    9.49092  34.526  &lt; 2e-16 ***\nAttack         -0.56111    0.09617  -5.835 8.60e-09 ***\nDefense        -0.49376    0.09890  -4.992 7.71e-07 ***\nSpeed          -0.52689    0.09158  -5.754 1.36e-08 ***\nWeight_kg       0.04521    0.04756   0.951    0.342    \nHeight_m       -4.23261    2.96479  -1.428    0.154    \nHP             -0.58127    0.09935  -5.851 7.83e-09 ***\n`Special Atk`  -0.59105    0.09532  -6.200 1.01e-09 ***\n`Special Def`  -0.48401    0.10762  -4.498 8.18e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for gaussian family taken to be 2724.921)\n\n    Null deviance: 3602868  on 643  degrees of freedom\nResidual deviance: 1730325  on 635  degrees of freedom\nAIC: 6932.7\n\nNumber of Fisher Scoring iterations: 2\n\n\nKeep a note of the AIC value here. AIC stands for Akaike Information Criterion which is a measure used in statistics to assess how well a statistical model fits the data.\nWhen comparing models LOWER AIC values are thought to indicate that a model is a relatively better fit for the data.\n\n\nUsing PCs\nNow let’s try to do the same using our PCs\n\nPCA_model &lt;- glm(Catch_Rate ~ Comp.1 + Comp.2 + Comp.3 + Comp.4,  data=pca_plot)\nsummary(PCA_model)\n\n\nCall:\nglm(formula = Catch_Rate ~ Comp.1 + Comp.2 + Comp.3 + Comp.4, \n    data = pca_plot)\n\nDeviance Residuals: \n     Min        1Q    Median        3Q       Max  \n-120.709   -24.619     0.719    28.339   147.563  \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 107.4519     1.6847  63.783  &lt; 2e-16 ***\nComp.1      -27.4426     0.7872 -34.861  &lt; 2e-16 ***\nComp.2      -12.8318     1.3993  -9.170  &lt; 2e-16 ***\nComp.3        8.9677     1.5885   5.645 2.48e-08 ***\nComp.4        1.6513     1.6376   1.008    0.314    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for gaussian family taken to be 1827.718)\n\n    Null deviance: 3602868  on 643  degrees of freedom\nResidual deviance: 1167912  on 639  degrees of freedom\nAIC: 6671.5\n\nNumber of Fisher Scoring iterations: 2\n\n\nHow do the two models compare ?\nWhich one would you use?\n\n\nPotential benefits of using PCA in modeling:\n\nReducing dimensions of the data makes for a simpler model (less features) which is less likely to overfit data\nPCA can be helpful in reducing noise since it retains the most significant principal components and discards the rest\nPCA transforms correlated variables into a set of linearly uncorrelated components, which helps to mitigate the issues that arise from multicollinearity."
+  },
+  {
+    "objectID": "presentations/pca.html#take-aways",
+    "href": "presentations/pca.html#take-aways",
+    "title": "A practical guide to principal component analysis",
+    "section": "Take aways",
+    "text": "Take aways\n\nPCA requires clean & numeric data set on roughly the same scale\nThe princomp() function can be used to perfrom PCA in R. The factoextra package has some good visualization tools designed specifically to work with this function.\nReducing the complexity of models using PCA can help to improve prediction ability"
+  },
+  {
+    "objectID": "presentations/pca.html#resources-to-learn-more",
+    "href": "presentations/pca.html#resources-to-learn-more",
+    "title": "A practical guide to principal component analysis",
+    "section": "Resources to learn more",
+    "text": "Resources to learn more\nThis was a very quick, practical guide to using PCA. In the same way that driving a car doesn’t require knowing how internal combustion engines work, you can use PCA without understanding the underlying mechanics. HOWEVER if you do so you better have a mechanic (aka statistician) on hand in case anything breaks down.\nIf you want to deepen your knowledge and learn more about how PCA works (including the math behind it) check out the following:\n\nhttps://bradleyboehmke.github.io/HOML/pca.html\nhttps://www.youtube.com/watch?v=FgakZw6K1QQ"
+  },
+  {
+    "objectID": "presentations/ggplot2Intro.html",
+    "href": "presentations/ggplot2Intro.html",
+    "title": "ggplot2, an introduction",
+    "section": "",
+    "text": "Tidyverse\n\n\nA collection of R packages serving different functions but following the same principles\nDesigned to work well together\nExtremely nerdy\n\n\nMarvel Universe\n\n\nA collection of heros/movies with different skills but following the same principles\nFrequent crossovers/cameos\nExtremely nerdy\n\n\n\n\n\n\n\n\n\n\n\nOne reason that ggplot2 is so popular is that it uses a consistent framework, or “grammar”, which makes it both intuitive AND flexible\nElements of any chart (i.e. axis, points, bars, text etc) are “layered” on top of each other to form the complete graphic\n\n\n\n\n\n\n\n\n\n\nThe layered grammar of graphics concept was introduced by Hadley Wickham (@hadleywickham@fosstodon.org) the creator of ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n“Good grammar is just the first step in creating a good sentence”\n\n\n\nWickham, H. A Layered Grammar of Graphics. Journal of Computational and Graphical Statistics 19, 3–28 (2010).\n\n\n\n\n\n\n\nlibrary(ggplot2)\ndata=data.frame(A=c(2,1,4,9),B=c(3,2,5,10), C=c(4,1,15,80),D=c(\"a\",\"a\",\"b\",\"b\"))\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\nTip\n\n\n\nData is always defined in the first layer and is inherited in all subsequent layers\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) #Layer 1\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nData is always defined in the first layer and is inherited in all subsequent layers\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() #Layer 2\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nLayers are added together using the “+” operator\n\n\n\n\n\n\n\n\nImportant\n\n\n\nOrder matters!\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() #Layer 3\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\ngeom_() functions are used in secondary layers to define the geometric objects used in the plot\nYou can add as many geoms to the plot as you like\n\n\n\n\n\n\n\n\nImportant\n\n\n\nBut keep in mind the data viz pillars!\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) #Layer 5\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThese functions are added to make changes to the default coordinate system or axis scales\nThey start with the prefixes coord_ or scale_x, scale_y respectively\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) + #Layer 1\n  geom_point() + #Layer 2\n  geom_line() + #Layer 3\n  coord_flip() + #Layer 4\n  scale_x_continuous(limits=c(1,100)) +#Layer 5\n  theme_classic() #Layer 6\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nFinally, theme() functions can be added to alter the default appearance of the plot\ne.g. title, axis titles, font size, background color, etc\n\n\n\n\n\n\n\nYou can change attributes of a layer by specifying them as arguments within the geom() function\n\n\n\n\n\nShape codes in R\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\n  geom_point(color=\"red\", shape=12, size=8)\n\n\n\n\n\n\n\n\n\nThe aes() function is used to assign variables in your data to graphical parameters (or channels)\n\n\n\nPosition (x,y)\nColor (fill, color)\nShape(shape, linetype)\nSize (size)\nTransparency (alpha)\nGroupings (group)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nSyntax note: Variable names do NOT use quotes when used inside aes()\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(color=\"red\", size=8)\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D, size=C))\n\n\n\n\n\n\n\n\nprint(\"data\")\n\n[1] \"data\"\n\ndata\n\n  A  B  C D\n1 2  3  4 a\n2 1  2  1 a\n3 4  5 15 b\n4 9 10 80 b\n\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\n\n\n\n\n\n\n\n\nggplot(data=data, aes(x=C, y=A, color=D)) +\ngeom_point() +\ngeom_line()\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAesthetics set within the original layer will be applied to all later layers/geoms\n\n\n\n\n\nggplots can be stored as objects in R\n\nplot &lt;- ggplot(data=data, aes(x=C, y=A)) +\ngeom_point(aes(color=D)) +\ngeom_line()\n\nUse ggsave() to save jpg, png, pdf versions of plots\n\nplot\n\n\n\nggsave(filename=\"myfirstplot.pdf\", plot, height=4, width=4)\n\n\n\n\n\n\n\n\n\ngeom_point()\ngeom_jitter()\n\n\n\n\n\ngeom_histogram()\ngeom_density()\ngeom_boxplot()\ngeom_violin()\n\n\n\n\n\ngeom_smooth()\n\n\n\n\n\n\ngeom_bar()\ngeom_col()\n\n\n\n\n\ngeom_abline()\ngeom_hline()\ngeom_vline()\n\n\n\n\n\ngeom_text()\ngeom_label()\n\n\n\n\n\n\n\n\n\n\n\nModifies text labels on plot,axis, etc\n\nlabs()\nxlab()\nylab()\n\n\n\n\nChange aspects of axis/channel scales\n\nscale_x_continuous()\n\n_discrete()\n_manual()\n\nscale_color_continuous()\n\n_discrete()\n_manual()\n\nscale_fill_continuous()\n\n_discrete()\n_manual()\n\n\n\n\n\n\n\ncoord_cartesian()\ncoord_flip()\ncoord_polar()\n\n\n\n\n\nfacet_grid()\nfacet_wrap()\n\n\n\n\nFaceting on the dose variable\n\n\n\n\n\n\n\n\n\n\n\n\nAdd these to ggplots as quick theme changes\n\ntheme_grey() default theme in ggplot\ntheme_bw()\ntheme_light()\ntheme_dark()\ntheme_minimal()\ntheme_classic()\ntheme_void()\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtremely customizable\n\ntheme()\n\ne.g.\nggplot() + theme(axis.text=element_text(size=10))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
   }
 ]

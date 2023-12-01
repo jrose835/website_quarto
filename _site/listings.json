@@ -8,6 +8,7 @@
   {
     "listing": "/Teaching.html",
     "items": [
+      "/presentations/pca.html",
       "/presentations/IntroDataViz.html",
       "/presentations/looping_TAsession_02Nov23.html",
       "/presentations/ggplot2Intro.html"
