@@ -1,0 +1,309 @@
+---
+title: "Tales from the Loop" 
+subtitle: "A very quick introduction to looping in R"
+title-slide-attributes:
+  data-background-image: ./images/Stalenhagloop.png
+  data-background-size: cover
+author: "Jim Rose"
+date: Oct 26 2022
+image: ./images/Stalenhagloop.png
+format: 
+  revealjs:
+    theme: blood
+    self-contained: true
+editor: visual
+---
+
+## Outline {background-image="./images/Stalenhagloop.png"}
+
+-   What is a programming loop?
+-   For loop
+    -   The "counter index" variable
+-   Nested loops
+-   Coding loops vs functions
+    -   Functions inside a loop
+    -   Looping vs vectorization
+-   Some advice on when to use loops
+
+## What is a programming loop?
+
+A loop is **set of instructions** which allows you to apply one or more custom code operations **repeatedly** throughout a predetermine number of **cycles** (aka loops)
+
+## What is a programming loop?
+
+![](./images/loop_js-02-farm.png) https://contest-server.cs.uchicago.edu
+
+## Neccessary Components of a Programming Loop
+
+::: incremental
+-   **Iterator or counter**
+
+    -   *marks how many loops have occurred*
+
+-   **Code to be run repeatedly**
+
+    -   *part of the code doing the actual work!*
+
+-   **Exit condition**
+
+    -   *determines when to stop looping*
+:::
+
+## 
+
+**Let's say you wanted to find the mean and standard deviation of each row in this matrix**
+
+```{r}
+library(tidyverse)
+```
+
+```{r echo=TRUE, `code-fold`=TRUE}
+mymatrix <- matrix(rnorm(15, mean=10, sd=3),
+                   nrow=3, ncol=5
+                   )
+mymatrix
+```
+
+::: aside
+We can use a loop to "iterate" through each row
+:::
+
+## The For Loop
+
+```{r echo=TRUE, eval=FALSE}
+#| code-line-numbers: "1|2|1|2|1|2"
+for (i in 1:nrow(mymatrix)){
+  print(i)
+}
+```
+
+::: aside
+`i` is a counter variable
+
+Exit conditions are put in the `()` after `for`
+
+Executable code is put in `{}`
+:::
+
+## The For Loop
+
+```{r echo=TRUE, eval=TRUE}
+for (i in 1:nrow(mymatrix)){
+  print(i)
+}
+```
+
+::: aside
+`i` is a counter variable
+
+Exit conditions are put in the `()` after `for`
+
+Executable code is put in `{}`
+:::
+
+## Calculating row-wise mean and sd
+
+-   First create an empty output object
+
+-   *A object to hold the output must be created OUTSIDE of the loop first or else the loop will cause an error*
+
+```{r echo=TRUE, eval=TRUE}
+row_stats <- data.frame(means=rep(NA, nrow(mymatrix)),
+                       stdev=rep(NA, nrow(mymatrix)))
+
+row_stats
+```
+
+## Then loop for through each row
+
+```{r echo=TRUE, eval=FALSE}
+#| code-line-numbers: "4-7"
+
+row_stats <- data.frame(means=rep(NA, nrow(mymatrix)),
+                       stdev=rep(NA, nrow(mymatrix)))
+
+for (i in 1:nrow(mymatrix)){
+  row_stats$means[i] <- mean(mymatrix[i,])
+  row_stats$stdev[i] <- sd(mymatrix[i,])
+}
+row_stats
+```
+
+::: aside
+Take advantage of the counter variable (`i`) to index your input and output objects
+:::
+
+## Then loop for through each row
+
+```{r echo=TRUE, eval=TRUE}
+#| code-line-numbers: "8"
+
+row_stats <- data.frame(means=rep(NA, nrow(mymatrix)),
+                       stdev=rep(NA, nrow(mymatrix)))
+
+for (i in 1:nrow(mymatrix)){
+  row_stats$means[i] <- mean(mymatrix[i,])
+  row_stats$stdev[i] <- sd(mymatrix[i,])
+}
+row_stats
+```
+
+## Another way to write a for loop
+
+-   The counter variable can be named anything you like
+
+-   R will iterate through whatever you declare after the `in` operator and assign it to the counter variable
+
+```{r echo=TRUE, eval=TRUE}
+#| output-location: fragment
+dragons <- c("Vhagar","Caraxes","Syrax","Meleys")
+
+for (dragon in dragons){
+  print(paste(dragon, "the fearsome", sep=" "))
+}
+```
+
+## Looping to Z-score Normalize
+
+Now let's use these same calculations to create a z-scored version of the orignal matrix
+
+```{r echo=TRUE, eval=FALSE}
+#| code-line-numbers: "1-2|4-7,12|8-11"
+# First create empty output object
+zscored <- matrix(nrow=nrow(mymatrix), ncol=ncol(mymatrix))
+
+for (i in 1:nrow(mymatrix)){
+  #Then loop through rows using i to calculate the row statistics
+  mean <- mean(mymatrix[i,])
+  sd <- sd(mymatrix[i,])
+  #Then use these values to normalize each entry in the matrix
+  for (j in 1:ncol(mymatrix)){
+    zscored[i,j] <- (mymatrix[i,j] - mean)/sd
+  }
+}
+zscored
+```
+
+::: footer
+This is called a *Nested Loop*. You need **two** different counter variables: `i` and `j`
+:::
+
+## Looping to Z-score Normalize
+
+Now let's use these same calculations to create a z-scored version of the orignal matrix
+
+```{r echo=TRUE, `code-fold`=TRUE}
+zscored <- matrix(nrow=3, ncol=5)
+
+for (i in 1:nrow(mymatrix)){
+  #First calculate the row statistics
+  mean <- mean(mymatrix[i,])
+  sd <- sd(mymatrix[i,])
+  #Then use these values to normalize each entry in the matrix
+  for (j in 1:ncol(mymatrix)){
+    zscored[i,j] <- (mymatrix[i,j] - mean)/sd
+  }
+}
+zscored
+```
+
+## Coding with loops and custom functions {.smaller}
+
+Loops can be combined with custom functions to improve simplicity and readability of your code
+
+```{r echo=TRUE, `code-fold`=FALSE, eval=FALSE}
+zscored <- matrix(nrow=3, ncol=5)
+
+my_zscore_fn <- function(x){
+  #Input: x, a vector of numeric class
+  #Output: z-scored vector
+  mean = mean(x)
+  sd = sd(x)
+  output = (x - mean)/sd
+  return(output)
+}
+
+for (i in 1:nrow(mymatrix)){
+  input <- mymatrix[i,]
+  zscored[i,] <- my_zscore_fn(input)
+}
+zscored
+```
+
+## Coding with loops and custom functions {.smaller}
+
+Loops can be combined with custom functions to improve simplicity and readability of your code
+
+```{r echo=TRUE, `code-fold`=TRUE, eval=TRUE}
+zscored <- matrix(nrow=3, ncol=5)
+
+my_zscore_fn <- function(x){
+  #Input: x, a vector of numeric class
+  #Output: z-scored vector
+  mean = mean(x)
+  sd = sd(x)
+  output = (x - mean)/sd
+  return(output)
+}
+
+for (i in 1:nrow(mymatrix)){
+  input <- mymatrix[i,]
+  zscored[i,] <- my_zscore_fn(input)
+}
+zscored
+```
+
+## Some advice on when to use loops {.smaller}
+
+Functions are nearly always faster than loops
+
+```{r echo=TRUE}
+#| output-location: column-fragment
+library(tictoc)
+
+myBIGmatrix <- matrix(rnorm(1500, mean=10, sd=3),
+                   nrow=300, ncol=500
+                   )
+BIGzscored <- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))
+
+tic()
+for (i in 1:nrow(myBIGmatrix)){
+  #First calculate the row statistics
+  mean <- mean(myBIGmatrix[i,])
+  sd <- sd(myBIGmatrix[i,])
+  #Then use these values to normalize each entry in the matrix
+  for (j in 1:ncol(myBIGmatrix)){
+    BIGzscored[i,j] <- (myBIGmatrix[i,j] - mean)/sd
+  }
+}
+toc()
+
+
+```
+
+## Some advice on when to use loops {.smaller}
+
+Vectorized functions save compute time with **large** datasets, but the difference is minimal if you are not dealing with a lot of data points.
+
+```{r echo=TRUE}
+#| output-location: column-fragment
+library(tictoc)
+
+myBIGmatrix <- matrix(rnorm(1500, mean=10, sd=3),
+                   nrow=300, ncol=500
+                   )
+BIGzscored <- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))
+
+tic()
+for (i in 1:nrow(myBIGmatrix)){
+  input <- myBIGmatrix[i,]
+  BIGzscored[i,] <- my_zscore_fn(input)
+}
+toc()
+```
+
+# Happy Looping {background-image="./images/Stalenhagloop.png"}
+
+::: footer
+See [here](https://learnr.usu.edu/base_r/data_manipulation/4_8_looping.php) for more detailed info on writing loops in R
+:::

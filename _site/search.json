@@ -404,5 +404,131 @@
     "title": "ggplot2, an introduction",
     "section": "Googling (& chatGPT!) are your friends",
     "text": "Googling (& chatGPT!) are your friends\nResources:\n\nhttps://rkabacoff.github.io/datavis/\nhttps://ggplot2.tidyverse.org/reference/index.html\nhttps://www.datanovia.com/en/blog/category/ggplot2/\nhttps://github.com/thomasp85/ggraph"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html",
+    "href": "presentations/looping_TAsession_02Nov23.html",
+    "title": "Tales from the Loop",
+    "section": "",
+    "text": "What is a programming loop?\nFor loop\n\nThe “counter index” variable\n\nNested loops\nCoding loops vs functions\n\nFunctions inside a loop\nLooping vs vectorization\n\nSome advice on when to use loops"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#outline",
+    "href": "presentations/looping_TAsession_02Nov23.html#outline",
+    "title": "Tales from the Loop",
+    "section": "Outline",
+    "text": "Outline\n\nWhat is a programming loop?\nFor loop\n\nThe “counter index” variable\n\nNested loops\nCoding loops vs functions\n\nFunctions inside a loop\nLooping vs vectorization\n\nSome advice on when to use loops"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#what-is-a-programming-loop",
+    "href": "presentations/looping_TAsession_02Nov23.html#what-is-a-programming-loop",
+    "title": "Tales from the Loop",
+    "section": "What is a programming loop?",
+    "text": "What is a programming loop?\nA loop is set of instructions which allows you to apply one or more custom code operations repeatedly throughout a predetermine number of cycles (aka loops)"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#what-is-a-programming-loop-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#what-is-a-programming-loop-1",
+    "title": "Tales from the Loop",
+    "section": "What is a programming loop?",
+    "text": "What is a programming loop?\n https://contest-server.cs.uchicago.edu"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#neccessary-components-of-a-programming-loop",
+    "href": "presentations/looping_TAsession_02Nov23.html#neccessary-components-of-a-programming-loop",
+    "title": "Tales from the Loop",
+    "section": "Neccessary Components of a Programming Loop",
+    "text": "Neccessary Components of a Programming Loop\n\n\nIterator or counter\n\nmarks how many loops have occurred\n\nCode to be run repeatedly\n\npart of the code doing the actual work!\n\nExit condition\n\ndetermines when to stop looping"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#section",
+    "href": "presentations/looping_TAsession_02Nov23.html#section",
+    "title": "Tales from the Loop",
+    "section": "",
+    "text": "Let’s say you wanted to find the mean and standard deviation of each row in this matrix\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✓ ggplot2 3.3.5     ✓ purrr   0.3.4\n✓ tibble  3.1.8     ✓ dplyr   1.0.8\n✓ tidyr   1.2.0     ✓ stringr 1.4.0\n✓ readr   1.4.0     ✓ forcats 0.5.1\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\nx dplyr::filter() masks stats::filter()\nx dplyr::lag()    masks stats::lag()\n\n\n\n\nCode\nmymatrix &lt;- matrix(rnorm(15, mean=10, sd=3),\n                   nrow=3, ncol=5\n                   )\nmymatrix\n\n\n         [,1]      [,2]     [,3]      [,4]      [,5]\n[1,] 10.03294 13.544074 9.762447  6.087668  7.443436\n[2,] 13.89763  9.955365 7.645999 11.368556  6.531978\n[3,] 11.35554  5.132111 7.121947  8.108390 12.261478\n\n\n\n\nWe can use a loop to “iterate” through each row"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#the-for-loop",
+    "href": "presentations/looping_TAsession_02Nov23.html#the-for-loop",
+    "title": "Tales from the Loop",
+    "section": "The For Loop",
+    "text": "The For Loop\n\nfor (i in 1:nrow(mymatrix)){\n  print(i)\n}\n\n\n\ni is a counter variable\nExit conditions are put in the () after for\nExecutable code is put in {}"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#the-for-loop-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#the-for-loop-1",
+    "title": "Tales from the Loop",
+    "section": "The For Loop",
+    "text": "The For Loop\n\nfor (i in 1:nrow(mymatrix)){\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n\n\n\n\ni is a counter variable\nExit conditions are put in the () after for\nExecutable code is put in {}"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#calculating-row-wise-mean-and-sd",
+    "href": "presentations/looping_TAsession_02Nov23.html#calculating-row-wise-mean-and-sd",
+    "title": "Tales from the Loop",
+    "section": "Calculating row-wise mean and sd",
+    "text": "Calculating row-wise mean and sd\n\nFirst create an empty output object\nA object to hold the output must be created OUTSIDE of the loop first or else the loop will cause an error\n\n\nrow_stats &lt;- data.frame(means=rep(NA, nrow(mymatrix)),\n                       stdev=rep(NA, nrow(mymatrix)))\n\nrow_stats\n\n  means stdev\n1    NA    NA\n2    NA    NA\n3    NA    NA"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#then-loop-for-through-each-row",
+    "href": "presentations/looping_TAsession_02Nov23.html#then-loop-for-through-each-row",
+    "title": "Tales from the Loop",
+    "section": "Then loop for through each row",
+    "text": "Then loop for through each row\n\nrow_stats &lt;- data.frame(means=rep(NA, nrow(mymatrix)),\n                       stdev=rep(NA, nrow(mymatrix)))\n\nfor (i in 1:nrow(mymatrix)){\n  row_stats$means[i] &lt;- mean(mymatrix[i,])\n  row_stats$stdev[i] &lt;- sd(mymatrix[i,])\n}\nrow_stats\n\n\n\nTake advantage of the counter variable (i) to index your input and output objects"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#then-loop-for-through-each-row-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#then-loop-for-through-each-row-1",
+    "title": "Tales from the Loop",
+    "section": "Then loop for through each row",
+    "text": "Then loop for through each row\n\nrow_stats &lt;- data.frame(means=rep(NA, nrow(mymatrix)),\n                       stdev=rep(NA, nrow(mymatrix)))\n\nfor (i in 1:nrow(mymatrix)){\n  row_stats$means[i] &lt;- mean(mymatrix[i,])\n  row_stats$stdev[i] &lt;- sd(mymatrix[i,])\n}\nrow_stats\n\n     means    stdev\n1 9.374114 2.850512\n2 9.879905 2.939507\n3 8.795893 2.969012"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#another-way-to-write-a-for-loop",
+    "href": "presentations/looping_TAsession_02Nov23.html#another-way-to-write-a-for-loop",
+    "title": "Tales from the Loop",
+    "section": "Another way to write a for loop",
+    "text": "Another way to write a for loop\n\nThe counter variable can be named anything you like\nR will iterate through whatever you declare after the in operator and assign it to the counter variable\n\n\ndragons &lt;- c(\"Vhagar\",\"Caraxes\",\"Syrax\",\"Meleys\")\n\nfor (dragon in dragons){\n  print(paste(dragon, \"the fearsome\", sep=\" \"))\n}\n\n\n\n[1] \"Vhagar the fearsome\"\n[1] \"Caraxes the fearsome\"\n[1] \"Syrax the fearsome\"\n[1] \"Meleys the fearsome\""
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize",
+    "href": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize",
+    "title": "Tales from the Loop",
+    "section": "Looping to Z-score Normalize",
+    "text": "Looping to Z-score Normalize\nNow let’s use these same calculations to create a z-scored version of the orignal matrix\n\n# First create empty output object\nzscored &lt;- matrix(nrow=nrow(mymatrix), ncol=ncol(mymatrix))\n\nfor (i in 1:nrow(mymatrix)){\n  #Then loop through rows using i to calculate the row statistics\n  mean &lt;- mean(mymatrix[i,])\n  sd &lt;- sd(mymatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(mymatrix)){\n    zscored[i,j] &lt;- (mymatrix[i,j] - mean)/sd\n  }\n}\nzscored\n\n\nThis is called a Nested Loop. You need two different counter variables: i and j"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#looping-to-z-score-normalize-1",
+    "title": "Tales from the Loop",
+    "section": "Looping to Z-score Normalize",
+    "text": "Looping to Z-score Normalize\nNow let’s use these same calculations to create a z-scored version of the orignal matrix\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nfor (i in 1:nrow(mymatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(mymatrix[i,])\n  sd &lt;- sd(mymatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(mymatrix)){\n    zscored[i,j] &lt;- (mymatrix[i,j] - mean)/sd\n  }\n}\nzscored\n\n\n          [,1]        [,2]       [,3]       [,4]      [,5]\n[1,] 0.2311268  1.46288119  0.1362330 -1.1529319 -0.677309\n[2,] 1.3668009  0.02567116 -0.7599592  0.5064288 -1.138942\n[3,] 0.8621204 -1.23400736 -0.5638057 -0.2315595  1.167252"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions",
+    "href": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions",
+    "title": "Tales from the Loop",
+    "section": "Coding with loops and custom functions",
+    "text": "Coding with loops and custom functions\nLoops can be combined with custom functions to improve simplicity and readability of your code\n\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nmy_zscore_fn &lt;- function(x){\n  #Input: x, a vector of numeric class\n  #Output: z-scored vector\n  mean = mean(x)\n  sd = sd(x)\n  output = (x - mean)/sd\n  return(output)\n}\n\nfor (i in 1:nrow(mymatrix)){\n  input &lt;- mymatrix[i,]\n  zscored[i,] &lt;- my_zscore_fn(input)\n}\nzscored"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#coding-with-loops-and-custom-functions-1",
+    "title": "Tales from the Loop",
+    "section": "Coding with loops and custom functions",
+    "text": "Coding with loops and custom functions\nLoops can be combined with custom functions to improve simplicity and readability of your code\n\n\nCode\nzscored &lt;- matrix(nrow=3, ncol=5)\n\nmy_zscore_fn &lt;- function(x){\n  #Input: x, a vector of numeric class\n  #Output: z-scored vector\n  mean = mean(x)\n  sd = sd(x)\n  output = (x - mean)/sd\n  return(output)\n}\n\nfor (i in 1:nrow(mymatrix)){\n  input &lt;- mymatrix[i,]\n  zscored[i,] &lt;- my_zscore_fn(input)\n}\nzscored\n\n\n          [,1]        [,2]       [,3]       [,4]      [,5]\n[1,] 0.2311268  1.46288119  0.1362330 -1.1529319 -0.677309\n[2,] 1.3668009  0.02567116 -0.7599592  0.5064288 -1.138942\n[3,] 0.8621204 -1.23400736 -0.5638057 -0.2315595  1.167252"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops",
+    "href": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops",
+    "title": "Tales from the Loop",
+    "section": "Some advice on when to use loops",
+    "text": "Some advice on when to use loops\nFunctions are nearly always faster than loops\n\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  #First calculate the row statistics\n  mean &lt;- mean(myBIGmatrix[i,])\n  sd &lt;- sd(myBIGmatrix[i,])\n  #Then use these values to normalize each entry in the matrix\n  for (j in 1:ncol(myBIGmatrix)){\n    BIGzscored[i,j] &lt;- (myBIGmatrix[i,j] - mean)/sd\n  }\n}\ntoc()\n\n\n0.044 sec elapsed"
+  },
+  {
+    "objectID": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops-1",
+    "href": "presentations/looping_TAsession_02Nov23.html#some-advice-on-when-to-use-loops-1",
+    "title": "Tales from the Loop",
+    "section": "Some advice on when to use loops",
+    "text": "Some advice on when to use loops\nVectorized functions save compute time with large datasets, but the difference is minimal if you are not dealing with a lot of data points.\n\n\nlibrary(tictoc)\n\nmyBIGmatrix &lt;- matrix(rnorm(1500, mean=10, sd=3),\n                   nrow=300, ncol=500\n                   )\nBIGzscored &lt;- matrix(nrow=nrow(myBIGmatrix), ncol=ncol(myBIGmatrix))\n\ntic()\nfor (i in 1:nrow(myBIGmatrix)){\n  input &lt;- myBIGmatrix[i,]\n  BIGzscored[i,] &lt;- my_zscore_fn(input)\n}\ntoc()\n\n\n0.014 sec elapsed"
   }
 ]

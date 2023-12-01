@@ -2,6 +2,7 @@
 title: "ggplot2, an introduction"
 author: "Jim Rose"
 institute: "Lecture for IBS519, Fall 2023"
+image: ./images/ggplothex.png
 format: 
   revealjs:
     self-contained: true
